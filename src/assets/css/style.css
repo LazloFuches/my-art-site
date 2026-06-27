@@ -221,3 +221,112 @@ figcaption {
   color: var(--text-light);
   font-style: italic;
 }
+/* TEXT PAGES */
+.text-page {
+  max-width: 680px;
+}
+
+.text-content p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* PRESS */
+.press-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.press-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.press-source {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.press-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.press-date {
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.press-excerpt {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  color: var(--text);
+}
+/* CONTACT FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 480px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.form-field input,
+.form-field textarea {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.8rem;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text);
+  width: 100%;
+  outline: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--text);
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: var(--text-light);
+}

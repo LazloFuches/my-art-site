@@ -4,7 +4,7 @@ layout: base.njk
 ---
 
 <div class="project-grid">
-  {% for project in projects %}
+  {%- for project in projects %}
   <a href="/projects/{{ project.slug }}/" class="project-item">
     <div class="project-thumb">
       <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
@@ -14,5 +14,5 @@ layout: base.njk
       <span class="project-year">{{ project.year }}</span>
     </div>
   </a>
-  {% endfor %}
+  {%- endfor %}
 </div>
