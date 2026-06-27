@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Project One",
+    "slug": "project-one",
+    "year": "2023",
+    "thumbnail": "/assets/images/project-one-thumb.jpg"
+  },
+  {
+    "title": "Project Two",
+    "slug": "project-two",
+    "year": "2022",
+    "thumbnail": "/assets/images/project-two-thumb.jpg"
+  },
+  {
+    "title": "Project Three",
+    "slug": "project-three",
+    "year": "2021",
+    "thumbnail": "/assets/images/project-three-thumb.jpg"
+  }
+]

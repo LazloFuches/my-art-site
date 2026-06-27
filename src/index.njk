@@ -1,0 +1,18 @@
+---
+title: Projects
+layout: base.njk
+---
+
+<div class="project-grid">
+  {% for project in projects %}
+  <a href="/projects/{{ project.slug }}/" class="project-item">
+    <div class="project-thumb">
+      <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
+    </div>
+    <div class="project-meta">
+      <span class="project-title">{{ project.title }}</span>
+      <span class="project-year">{{ project.year }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>

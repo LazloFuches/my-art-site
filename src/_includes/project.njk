@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+<div class="project-header">
+  <h1 class="project-title-large">{{ title }}</h1>
+  <span class="project-year-large">{{ year }}</span>
+</div>
+
+<div class="image-grid">
+  {% for image in images %}
+  <figure class="image-item">
+    <img src="{{ image.src }}" alt="{{ image.title }}">
+    <figcaption>
+      <span class="caption-title">{{ image.title }}</span>
+      <span class="caption-details">{{ image.medium }}, {{ image.dimensions }}, {{ image.date }}</span>
+      {% if image.collection %}
+      <span class="caption-collection">{{ image.collection }}</span>
+      {% endif %}
+    </figcaption>
+  </figure>
+  {% endfor %}
+</div>
