@@ -330,3 +330,37 @@ figcaption {
 .contact-form button:hover {
   background: var(--text-light);
 }
+/* ACTIVE NAV */
+nav a.active {
+  color: var(--text);
+  border-bottom: 1px solid var(--text);
+}
+
+/* PROJECTS INDEX - smaller thumbnails */
+.project-grid.small .project-thumb {
+  aspect-ratio: 4/3;
+}
+
+.project-grid.small {
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+/* INDIVIDUAL PROJECT PAGE - full width single column */
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.image-stack .image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-stack figcaption {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}

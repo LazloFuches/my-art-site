@@ -13,10 +13,10 @@
   <header>
     <div class="site-title"><a href="/">Robert Egert Studio</a></div>
     <nav>
-      <a href="/projects/">Projects</a>
-      <a href="/bio/">Bio</a>
-      <a href="/press/">Press</a>
-      <a href="/contact/">Contact</a>
+      <a href="/projects/" class="{% if '/projects' in page.url %}active{% endif %}">Projects</a>
+      <a href="/bio/" class="{% if '/bio' in page.url %}active{% endif %}">Bio</a>
+      <a href="/press/" class="{% if '/press' in page.url %}active{% endif %}">Press</a>
+      <a href="/contact/" class="{% if '/contact' in page.url %}active{% endif %}">Contact</a>
     </nav>
   </header>
   <main>

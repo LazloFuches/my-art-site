@@ -7,17 +7,17 @@ layout: base.njk
   <span class="project-year-large">{{ year }}</span>
 </div>
 
-<div class="image-grid">
-  {% for image in images %}
+<div class="image-stack">
+  {%- for image in images %}
   <figure class="image-item">
     <img src="{{ image.src }}" alt="{{ image.title }}">
     <figcaption>
       <span class="caption-title">{{ image.title }}</span>
       <span class="caption-details">{{ image.medium }}, {{ image.dimensions }}, {{ image.date }}</span>
-      {% if image.collection %}
+      {%- if image.collection %}
       <span class="caption-collection">{{ image.collection }}</span>
-      {% endif %}
+      {%- endif %}
     </figcaption>
   </figure>
-  {% endfor %}
+  {%- endfor %}
 </div>
