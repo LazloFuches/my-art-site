@@ -1,20 +1,86 @@
 [
   {
-    "title": "Project One",
-    "slug": "project-one",
-    "year": "2023",
-    "thumbnail": "/assets/images/project-one-thumb.jpg"
+    "title": "Small Worlds",
+    "slug": "small-worlds",
+    "year": "2026",
+    "thumbnail": "/assets/images/small-worlds/thumb.jpg"
   },
   {
-    "title": "Project Two",
-    "slug": "project-two",
+    "title": "Nocturnes",
+    "slug": "nocturnes",
     "year": "2022",
-    "thumbnail": "/assets/images/project-two-thumb.jpg"
+    "thumbnail": "/assets/images/nocturnes/thumb.jpg"
   },
   {
-    "title": "Project Three",
-    "slug": "project-three",
+    "title": "Preparatory Academy",
+    "slug": "preparatory-academy",
     "year": "2021",
-    "thumbnail": "/assets/images/project-three-thumb.jpg"
+    "thumbnail": "/assets/images/preparatory-academy/thumb.jpg"
+  },
+  {
+    "title": "Cliffs",
+    "slug": "cliffs",
+    "year": "2020",
+    "thumbnail": "/assets/images/cliffs/thumb.jpg"
+  },
+  {
+    "title": "Anthropocene",
+    "slug": "anthropocene",
+    "year": "2017",
+    "thumbnail": "/assets/images/anthropocene/thumb.jpg"
+  },
+  {
+    "title": "Memory Architecture",
+    "slug": "memory-architecture",
+    "year": "2017",
+    "thumbnail": "/assets/images/memory-architecture/thumb.jpg"
+  },
+  {
+    "title": "Bonsai Garden",
+    "slug": "bonsai-garden",
+    "year": "2017",
+    "thumbnail": "/assets/images/bonsai-garden/thumb.jpg"
+  },
+  {
+    "title": "Morphopolis",
+    "slug": "morphopolis",
+    "year": "2014",
+    "thumbnail": "/assets/images/morphopolis/thumb.jpg"
+  },
+  {
+    "title": "Gothic Interiors",
+    "slug": "gothic-interiors",
+    "year": "2013",
+    "thumbnail": "/assets/images/gothic-interiors/thumb.jpg"
+  },
+  {
+    "title": "Towers",
+    "slug": "towers",
+    "year": "2012",
+    "thumbnail": "/assets/images/towers/thumb.jpg"
+  },
+  {
+    "title": "Unbearable Sculpture",
+    "slug": "unbearable-sculpture",
+    "year": "2010",
+    "thumbnail": "/assets/images/unbearable-sculpture/thumb.jpg"
+  },
+  {
+    "title": "Gag Furniture",
+    "slug": "gag-furniture",
+    "year": "2008",
+    "thumbnail": "/assets/images/gag-furniture/thumb.jpg"
+  },
+  {
+    "title": "Figures",
+    "slug": "figures",
+    "year": "",
+    "thumbnail": "/assets/images/figures/thumb.jpg"
+  },
+  {
+    "title": "Archive of the 20th Century",
+    "slug": "archive-of-the-20th-century",
+    "year": "1992",
+    "thumbnail": "/assets/images/archive-of-the-20th-century/thumb.jpg"
   }
 ]
