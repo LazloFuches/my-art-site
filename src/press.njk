@@ -3,13 +3,29 @@ title: Press
 layout: base.njk
 ---
 
-<div class="text-page">
-  <div class="press-list">
-    <div class="press-item">
-      <span class="press-source">Publication Name</span>
-      <span class="press-title">Article Title</span>
-      <span class="press-date">2023</span>
-      <p class="press-excerpt">A sentence of descriptive text about the press item goes here.</p>
+<div class="press-columns">
+
+  <div class="press-entry">
+    <div class="press-entry-header">
+      <span class="press-entry-type">Catalogue</span>
+      <h2 class="press-entry-title">Catalogue Title One</h2>
+      <span class="press-entry-date">2019</span>
+    </div>
+    <p class="press-entry-text">Brief description of the catalogue and exhibition context.</p>
+    <a class="press-download" href="/assets/pdfs/catalogue-one.pdf" target="_blank">Download PDF</a>
+  </div>
+
+  <div class="press-entry">
+    <div class="press-entry-header">
+      <span class="press-entry-type">Exhibition</span>
+      <h2 class="press-entry-title">Exhibition Title One</h2>
+      <span class="press-entry-date">Gallery Name, 2021</span>
+    </div>
+    <p class="press-entry-text">Brief description of the exhibition.</p>
+    <div class="press-photos">
+      <img src="/assets/images/placeholder.svg" alt="Exhibition view">
+      <img src="/assets/images/placeholder.svg" alt="Exhibition view">
     </div>
   </div>
+
 </div>
