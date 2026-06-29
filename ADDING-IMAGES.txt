@@ -1,0 +1,53 @@
+HOW TO ADD A NEW IMAGE TO A PROJECT
+=====================================
+
+STEP 1: Add your new image file
+- Export the image from Photoshop at 2000px longest dimension, quality 80, JPEG format
+- Name it with the next number in sequence (e.g. if the last image is 10.jpg, name it 11.jpg)
+- Copy it into the correct project folder inside:
+  my-art-site/src/assets/images/[project-name]/
+
+STEP 2: Open the project file in VS Code
+- Open VS Code
+- In the Explorer panel find src/projects/[project-name].njk
+- Click to open it
+
+STEP 3: Find the template comment at the bottom of the file
+- Scroll to the bottom of the file
+- You will see lines starting with # that look like this:
+  # - src: /assets/images/[project]/11.jpg
+  #   title: Title of work
+  #   medium: Medium
+  #   dimensions: 00 x 00 inches
+  #   date: 2014
+  #   collection: Private collection
+
+STEP 4: Add the new image entry
+- Copy those lines
+- Paste them directly ABOVE the comment block
+- Remove the # and the space after each # so it looks like this:
+  - src: /assets/images/morphopolis/11.jpg
+    title: Title of work
+    medium: Acrylic on canvas
+    dimensions: 00 x 00 inches
+    date: 2014
+    collection: Private collection
+- Fill in the correct values for your new image
+- If there is no collection, leave it blank: collection:
+- Save with Cmd+S
+
+STEP 5: Publish to the live site
+- Open the terminal in VS Code (Terminal menu -> New Terminal)
+- Make sure you are in the my-art-site folder (you should see my-art-site in the prompt)
+- Run this command:
+  git add . && git commit -m "add new image to [project name]" && git push
+- Wait about 1 minute for Netlify to rebuild and publish
+
+STEP 6: Verify
+- Go to your live site and check the project page
+- Hard refresh the browser with Cmd+Shift+R if the new image doesn't appear immediately
+
+NOTES:
+- Never put spaces in image filenames. Use hyphens instead: my-image.jpg not my image.jpg
+- Keep images in sequence: 01.jpg, 02.jpg, 03.jpg etc.
+- The terminal must be in the my-art-site folder. If you see a different folder name in the prompt, type: cd ~/my-art-site and press Enter

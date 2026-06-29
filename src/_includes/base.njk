@@ -22,7 +22,7 @@
   </header>
   <main>
     {{ content | safe }}
-  </main>
+ <main class="{{ layout | replace('.njk', '') }}">
   <footer>
     <p>© Robert Egert Studio</p>
   </footer>

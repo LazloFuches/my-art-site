@@ -519,3 +519,13 @@ nav a.active {
 .press-entry img:hover {
   filter: saturate(1);
 }
+/* PROJECT PAGE IMAGES */
+.project-page img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  object-position: left;
+  display: block;
+  margin-bottom: 0.5rem;
+}
