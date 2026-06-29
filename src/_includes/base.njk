@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/glightbox.min.css">
 </head>
 <body>
   <header>
@@ -25,5 +26,13 @@
   <footer>
     <p>© Robert Egert Studio</p>
   </footer>
+  <script src="/assets/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: false,
+    autoplayVideos: false
+  });
+</script>
 </body>
 </html>

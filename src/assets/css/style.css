@@ -502,3 +502,20 @@ nav a.active {
   font-weight: 300;
   line-height: 1.6;
 }
+/* EPHEMERA IMAGES */
+.press-entry img {
+  width: 100%;
+  height: auto;
+  max-height: 225px;
+  object-fit: contain;
+  object-position: left;
+  display: block;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+  filter: saturate(0.85);
+  transition: filter 0.3s ease;
+}
+
+.press-entry img:hover {
+  filter: saturate(1);
+}
