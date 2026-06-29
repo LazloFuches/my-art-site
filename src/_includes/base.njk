@@ -14,25 +14,24 @@
   <header>
     <div class="site-title"><a href="/">Robert Egert Studio</a></div>
     <nav>
-      <a href="/projects/" class="{% if '/projects' in page.url %}active{% endif %}">Projects</a>
       <a href="/bio/" class="{% if '/bio' in page.url %}active{% endif %}">Bio</a>
       <a href="/ephemera/" class="{% if '/ephemera' in page.url %}active{% endif %}">Ephemera</a>
       <a href="/contact/" class="{% if '/contact' in page.url %}active{% endif %}">Contact</a>
     </nav>
   </header>
-  <main>
+  <main class="{{ layout | replace('.njk', '') }}">
     {{ content | safe }}
- <main class="{{ layout | replace('.njk', '') }}">
+  </main>
   <footer>
     <p>© Robert Egert Studio</p>
   </footer>
   <script src="/assets/glightbox.min.js"></script>
-<script>
-  const lightbox = GLightbox({
-    touchNavigation: true,
-    loop: false,
-    autoplayVideos: false
-  });
-</script>
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: false,
+      autoplayVideos: false
+    });
+  </script>
 </body>
 </html>

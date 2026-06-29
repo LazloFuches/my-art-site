@@ -3,84 +3,98 @@
     "title": "Small Worlds",
     "slug": "small-worlds",
     "year": "2026",
+    "studio": "Bronx, NY",
     "thumbnail": "/assets/images/small-worlds/thumb.jpg"
   },
   {
     "title": "Nocturnes",
     "slug": "nocturnes",
     "year": "2022",
+    "studio": "Englewood, NJ",
     "thumbnail": "/assets/images/nocturnes/thumb.jpg"
   },
   {
     "title": "Preparatory Academy",
     "slug": "preparatory-academy",
     "year": "2021",
+    "studio": "Brooklyn, NY",
     "thumbnail": "/assets/images/preparatory-academy/thumb.jpg"
   },
   {
     "title": "Cliffs",
     "slug": "cliffs",
     "year": "2020",
+    "studio": "In Situ",
     "thumbnail": "/assets/images/cliffs/thumb.jpg"
   },
   {
     "title": "Anthropocene",
     "slug": "anthropocene",
     "year": "2017",
+    "studio": "NY, NY",
     "thumbnail": "/assets/images/anthropocene/thumb.jpg"
   },
   {
     "title": "Memory Architecture",
     "slug": "memory-architecture",
     "year": "2017",
+    "studio": "NY, NY",
     "thumbnail": "/assets/images/memory-architecture/thumb.jpg"
   },
   {
     "title": "Bonsai Garden",
     "slug": "bonsai-garden",
     "year": "2017",
+    "studio": "LIC, NY",
     "thumbnail": "/assets/images/bonsai-garden/thumb.jpg"
   },
   {
     "title": "Morphopolis",
     "slug": "morphopolis",
     "year": "2014",
+    "studio": "Englewood, NJ",
     "thumbnail": "/assets/images/morphopolis/thumb.jpg"
   },
   {
     "title": "Gothic Interiors",
     "slug": "gothic-interiors",
     "year": "2013",
+    "studio": "Garnerville, NY",
     "thumbnail": "/assets/images/gothic-interiors/thumb.jpg"
   },
   {
     "title": "Towers",
     "slug": "towers",
     "year": "2012",
+    "studio": "Garnerville, NY",
     "thumbnail": "/assets/images/towers/thumb.jpg"
   },
   {
     "title": "Unbearable Sculpture",
     "slug": "unbearable-sculpture",
     "year": "2010",
+    "studio": "Garnerville, NY",
     "thumbnail": "/assets/images/unbearable-sculpture/thumb.jpg"
   },
   {
     "title": "Gag Furniture",
     "slug": "gag-furniture",
     "year": "2008",
+    "studio": "Garnerville, NY",
     "thumbnail": "/assets/images/gag-furniture/thumb.jpg"
   },
   {
     "title": "Figures",
     "slug": "figures",
     "year": "",
+    "studio": "In Situ",
     "thumbnail": "/assets/images/figures/thumb.jpg"
   },
   {
     "title": "Archive of the 20th Century",
     "slug": "archive-of-the-20th-century",
     "year": "1992",
+    "studio": "Brooklyn, NY",
     "thumbnail": "/assets/images/archive-of-the-20th-century/thumb.jpg"
   }
 ]

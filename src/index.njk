@@ -3,16 +3,18 @@ title: Projects
 layout: base.njk
 ---
 
-<div class="project-grid">
+<div class="press-columns">
   {% for project in projects %}
-  <a href="/projects/{{ project.slug }}/" class="project-item">
-    <div class="project-thumb">
-      <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
+  {% if project.thumbnail %}
+  <div class="press-entry project-entry">
+    <a href="/projects/{{ project.slug }}/">
+      <img src="{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy">
+    </a>
+    <div class="project-entry-meta">
+      <a href="/projects/{{ project.slug }}/" class="project-entry-title">{{ project.title }}</a>
+      <span class="project-entry-details">{{ project.studio }}{% if project.year %}, {{ project.year }}{% endif %}</span>
     </div>
-    <div class="project-meta">
-      <span class="project-title">{{ project.title }}</span>
-      <span class="project-year">{{ project.year }}</span>
-    </div>
-  </a>
+  </div>
+  {% endif %}
   {% endfor %}
 </div>

@@ -529,3 +529,41 @@ nav a.active {
   display: block;
   margin-bottom: 0.5rem;
 }
+/* HOMEPAGE PROJECT ENTRIES */
+.project-entry img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  object-position: left;
+  display: block;
+  margin-bottom: 0.75rem;
+  filter: none;
+  transition: opacity 0.2s ease;
+}
+
+.project-entry img:hover {
+  opacity: 0.85;
+}
+
+.project-entry-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.project-entry-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.project-entry-title:hover {
+  color: var(--text-light);
+}
+
+.project-entry-details {
+  font-size: 11px;
+  color: var(--text-light);
+  letter-spacing: 0.03em;
+}
