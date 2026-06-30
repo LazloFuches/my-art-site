@@ -567,3 +567,20 @@ nav a.active {
   color: var(--text-light);
   letter-spacing: 0.03em;
 }
+/* HOMEPAGE GRID (replaces column layout) */
+.project-grid-index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+.project-grid-index .project-entry {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .project-grid-index {
+    grid-template-columns: 1fr;
+  }
+}

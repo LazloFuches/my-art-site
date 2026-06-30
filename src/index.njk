@@ -3,10 +3,10 @@ title: Projects
 layout: base.njk
 ---
 
-<div class="press-columns">
+<div class="project-grid-index">
   {% for project in projects %}
   {% if project.thumbnail %}
-  <div class="press-entry project-entry">
+  <div class="project-entry">
     <a href="/projects/{{ project.slug }}/">
       <img src="{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy">
     </a>
