@@ -3,10 +3,12 @@ title: Projects
 layout: base.njk
 ---
 
-<div class="project-grid-index">
+<p class="homepage-intro">Projects, 1983–present.</p>
+
+<div class="press-columns">
   {% for project in projects %}
   {% if project.thumbnail %}
-  <div class="project-entry">
+  <div class="press-entry project-entry">
     <a href="/projects/{{ project.slug }}/">
       <img src="{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy">
     </a>
