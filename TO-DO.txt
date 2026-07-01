@@ -1,0 +1,28 @@
+TO-DO LIST
+==========
+Last updated: June 2026
+
+IMAGES TO RECROP
+----------------
+[ ] 
+
+
+CONTENT TO ADD
+--------------
+[ ] Figures project — images and captions
+[ ] Archive of the 20th Century — finalize 5 thematic groups and assign images
+[ ] Artist photo for bio page
+[ ] Project narrative text (optional, per project)
+[ ] Additional ephemera items (ongoing)
+
+TECHNICAL
+---------
+[ ] WebP image conversion (before launch)
+[ ] Domain transfer from Siteground to Netlify
+[ ] Cancel Siteground hosting (after domain transfer confirmed)
+[ ] PDF catalogue page-by-page images — Morphopolis and Anthropocene catalogues
+
+DESIGN
+------
+[ ] Review site on mobile
+[ ] Review site on different browsers

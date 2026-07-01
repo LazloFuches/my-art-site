@@ -584,3 +584,13 @@ nav a.active {
     grid-template-columns: 1fr;
   }
 }
+/* HOMEPAGE INTRO TEXT */
+.homepage-intro {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
