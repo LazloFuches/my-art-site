@@ -77,10 +77,24 @@
     "thumbnail": "/assets/images/gag-furniture/thumb.jpg"
   },
   {
-    "title": "Archive of the 20th Century",
-    "slug": "archive-of-the-20th-century",
-    "year": "1992",
+    "title": "Late 20th Century",
+    "slug": "late-20th-century",
+    "year": "1991",
     "studio": "Brooklyn, NY",
-    "thumbnail": "/assets/images/archive-of-the-20th-century/thumb.jpg"
+    "thumbnail": "/assets/images/late-20th-century/thumb.jpg"
+  },
+  {
+    "title": "Banners & Inscriptions",
+    "slug": "banners-and-inscriptions",
+    "year": "1986",
+    "studio": "Brooklyn, NY",
+    "thumbnail": "/assets/images/banners-and-inscriptions/thumb.jpg"
+  },
+  {
+    "title": "Early Work",
+    "slug": "early-work",
+    "year": "1984",
+    "studio": "Brooklyn, NY",
+    "thumbnail": "/assets/images/early-work/thumb.jpg"
   }
 ]
