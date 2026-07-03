@@ -13,8 +13,8 @@ layout: base.njk
       <img src="{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy">
     </a>
     <div class="project-entry-meta">
-      <a href="/projects/{{ project.slug }}/" class="project-entry-title">{{ project.title }}</a>
-      <span class="project-entry-details">{{ project.studio }}{% if project.year %}, {{ project.year }}{% endif %}</span>
+      <a href="/projects/{{ project.slug }}/" class="project-entry-title">Project: {{ project.title }}</a>
+      <span class="project-entry-details">{{ project.count }} works, {{ project.studio }}{% if project.year %}, {{ project.year }}{% endif %}</span>
     </div>
   </div>
   {% endif %}
