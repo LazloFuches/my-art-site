@@ -44,10 +44,9 @@ header {
 }
 
 .site-title {
-  font-size: 14px;
-  font-weight: 4
-  00;
-  letter-spacing: 0.03em;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -452,15 +451,18 @@ nav a.active {
 }
 
 .bio-byline {
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: var(--text-light);
   margin-bottom: 1.5rem !important;
 }
 
 .bio-exhibitions {
   margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
 }
 
 .bio-section-title {
@@ -582,38 +584,6 @@ nav a.active {
     grid-template-columns: 1fr;
   }
 }
-/* HOMEPAGE INTRO TEXT */
-.homepage-intro {
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  color: var(--text-light);
-  margin-bottom: 2.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border);
-}
-/* BIO PAGE TWO-COLUMN HEADER */
-.bio-header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
-  align-items: start;
-}
-
-.bio-portrait {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .bio-header {
-    grid-template-columns: 1fr;
-  }
-}
 /* BIO JUMP LINK */
 .bio-jump {
   font-size: 11px;
@@ -626,4 +596,30 @@ nav a.active {
 
 .bio-jump:hover {
   color: var(--text);
+}
+
+/* HOMEPAGE INTRO SIZE OVERRIDE */
+.homepage-intro {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* BIO JUMP LINK */
+.bio-jump {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+}
+
+.bio-jump:hover {
+  color: var(--text);
+}
+
+/* HOMEPAGE INTRO SIZE OVERRIDE */
+.homepage-intro {
+  font-size: 17px;
+  font-weight: 600;
 }
