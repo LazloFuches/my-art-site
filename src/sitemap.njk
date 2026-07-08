@@ -1,0 +1,13 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://robertegert.com/</loc></url>
+  <url><loc>https://robertegert.com/bio/</loc></url>
+  <url><loc>https://robertegert.com/ephemera/</loc></url>
+  <url><loc>https://robertegert.com/contact/</loc></url>
+  {% for project in projects %}<url><loc>https://robertegert.com/projects/{{ project.slug }}/</loc></url>
+  {% endfor %}
+</urlset>
