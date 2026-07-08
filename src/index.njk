@@ -1,10 +1,11 @@
 ---
 title: Projects
 layout: base.njk
+homepage_summary: ""
 ---
 
 <p class="homepage-intro">Project Archive, 1983–Present</p>
-
+{% if homepage_summary %}<p class="page-summary">{{ homepage_summary }}</p>{% endif %}
 <div class="press-columns">
   {% for project in projects %}
   {% if project.thumbnail %}

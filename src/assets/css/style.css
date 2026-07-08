@@ -7,7 +7,7 @@
 :root {
   --bg: #f0efed;
   --text: #1a1a1a;
-  --text-light: #666666;
+  --text-light: #4d4d4d;
   --border: #d0ceca;
   --max-width: 1200px;
   --font: 'Inter', system-ui, sans-serif;
@@ -434,4 +434,14 @@ figcaption {
   nav { gap: 1.5rem; }
   main { padding: 1.5rem; }
   .press-columns { column-count: 1; }
+}
+
+/* PAGE SUMMARY */
+.page-summary {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 680px;
+  margin-bottom: 2.5rem;
+  color: var(--text);
 }

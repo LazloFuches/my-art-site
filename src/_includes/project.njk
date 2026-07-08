@@ -6,12 +6,12 @@ layout: base.njk
   <h1 class="project-title-large">{{ title }}</h1>
   <span class="project-year-large">{{ year }}</span>
 </div>
-
+{% if summary %}<p class="page-summary">{{ summary }}</p>{% endif %}
 <div class="press-columns">
   {%- for image in images %}
   <div class="press-entry">
     <a href="{{ image.src }}" class="glightbox" data-gallery="{{ title }}" data-description="{{ image.title }}, {{ image.medium }}, {{ image.dimensions }}, {{ image.date }}{% if image.collection %}, {{ image.collection }}{% endif %}">
-      <img src="{{ image.src }}" alt="{{ image.title }}" loading="lazy">
+      <img src="{{ image.src }}" alt="{{ image.title }}, {{ image.medium }}, {{ image.dimensions }}, {{ image.date }}" loading="lazy">
     </a>
     <figcaption>
       <span class="caption-title">{{ image.title }}</span>
