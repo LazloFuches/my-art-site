@@ -26,3 +26,55 @@ DESIGN
 ------
 [ ] Review site on mobile
 [ ] Review site on different browsers
+
+
+================================================================
+FUTURE FEATURE: FEATURED LATEST-WORK BAND ON HOMEPAGE
+(Spec captured [date]; build when exhibition timing is real)
+================================================================
+
+PURPOSE
+Emphasize latest work at the top of the homepage, to direct gallerists
+to the newest project. Not a promotional "hero" image - a restrained
+featured band consistent with the archival aesthetic.
+
+LAYOUT
+- Full page-width band at the top of the homepage, below the header,
+  nav, and horizontal rule. Same background as the rest of the site.
+- The featured project's lead image sits on the RIGHT, displayed larger
+  than archive thumbnails - about 600px wide, height by proportion.
+- A caption block sits on the LEFT, bottom-aligned.
+- A horizontal rule below the band separates it from the archive grid.
+- The existing archive project grid displays exactly as it does now,
+  pushed down below the featured band.
+
+INTERACTION (UNDECIDED - two options)
+On clicking the featured image, either:
+  (a) Open a lightbox on the homepage showing the featured project's
+      full image set (more immediate; but a special-case behavior that
+      differs from how archive thumbnails behave, and needs the full
+      image list loaded into the homepage template).
+  (b) Go to the featured project's own page (consistent with how archive
+      thumbnails behave).
+CONCERN NOTED: redirecting to the project page on click may be non-
+transparent / disorienting, and could make it harder for the user to
+navigate back to the archive to view other projects. This concern
+leans toward option (a) - keeping the user on the homepage - but the
+decision is still open. Revisit at build time.
+
+DECISIONS TO MAKE AT BUILD TIME
+- "Latest" = automatic (whichever project is first in projects.json,
+  zero maintenance) OR manually flagged (allows strategic featuring).
+  Automatic-first likely fits the goal, but confirm.
+- Lead image quality: 600px display wants a source image of at least
+  ~1200px for sharpness on retina screens. Consider a dedicated
+  "feature image" field per project rather than reusing thumb.jpg.
+- Caption content: decide what appears (title, year, studio, work count,
+  or something slightly fuller since it is featured).
+- Mobile behavior: the right-image / left-caption side-by-side layout
+  must stack on narrow screens (image and caption vertical). Define this.
+
+FEASIBILITY
+Fully feasible. Reuses existing machinery (ordered projects.json,
+GLightbox, homepage template). The only genuinely new piece is the
+homepage lightbox IF option (a) is chosen. No structural obstacles.
