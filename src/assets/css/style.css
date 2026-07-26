@@ -264,7 +264,7 @@ figcaption {
 .press-entry img {
   width: 100%;
   height: auto;
-  max-height: 225px;
+  max-height: 270px;
   object-fit: contain;
   object-position: left;
   display: block;
