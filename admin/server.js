@@ -241,6 +241,18 @@ const server = http.createServer(async (req, res) => {
     return error(res, 'Not found', 404);
   }
 
+  // Serve source images from /assets/
+  if (pathname.startsWith('/assets/')) {
+    const imgPath = path.join(SRC, pathname);
+    if (fs.existsSync(imgPath)) {
+      const ext = path.extname(imgPath);
+      const mime = MIME[ext] || 'application/octet-stream';
+      res.writeHead(200, { 'Content-Type': mime });
+      fs.createReadStream(imgPath).pipe(res);
+      return;
+    }
+  }
+
   // Serve static admin files
   let filePath = pathname === '/' ? '/index.html' : pathname;
   filePath = path.join(__dirname, filePath);

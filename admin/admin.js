@@ -75,9 +75,11 @@ async function loadProjects() {
   list.classList.remove('hidden');
 
   for (const p of projects) {
+    const thumb = p.images.length > 0 ? p.images[0].src : '';
     const item = document.createElement('div');
     item.className = 'list-item';
     item.innerHTML = `
+      ${thumb ? `<img class="list-item-thumb" src="${esc(thumb)}" onerror="this.style.display='none'">` : ''}
       <div class="list-item-info">
         <div class="list-item-title">${esc(p.title)}</div>
         <div class="list-item-meta">${esc(p.year)} &middot; ${p.images.length} images</div>
@@ -238,6 +240,7 @@ function renderHomepageOrder() {
     item.dataset.index = i;
     item.innerHTML = `
       <span class="sortable-handle">&#9776;</span>
+      ${p.thumbnail ? `<img class="list-item-thumb" src="${esc(p.thumbnail)}" onerror="this.style.display='none'">` : ''}
       <div class="list-item-info">
         <div class="list-item-title">${esc(p.title)}</div>
         <div class="list-item-meta">${esc(p.year)} &middot; ${esc(p.studio)}</div>
@@ -288,7 +291,8 @@ function renderEphemera() {
     entry.className = 'ephemera-entry';
     entry.innerHTML = `
       <div class="entry-header" onclick="this.nextElementSibling.classList.toggle('collapsed')">
-        <h4>${esc(item.title)} <span style="font-weight:normal;color:var(--text-light)">(${esc(item.date)})</span></h4>
+        ${(item.images && item.images[0]) ? `<img class="list-item-thumb" src="${esc(item.images[0])}" onerror="this.style.display='none'">` : ''}
+        <h4 style="flex:1">${esc(item.title)} <span style="font-weight:normal;color:var(--text-light)">(${esc(item.date)})</span></h4>
         <div>
           <button class="btn danger btn-sm btn-delete-eph" data-index="${i}">&times;</button>
         </div>

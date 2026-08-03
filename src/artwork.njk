@@ -6,12 +6,15 @@ pagination:
 permalink: "/projects/{{ artwork.projectSlug }}/{{ artwork.index + 1 }}/"
 layout: base.njk
 pageType: art-detail
+hideSidebar: true
 eleventyComputed:
   title: "{{ artwork.title }} — {{ artwork.projectTitle }}"
 ---
 <div class="art-page">
 
-  <a class="art-page__back" href="/projects/{{ artwork.projectSlug }}/">← {{ artwork.projectTitle }}</a>
+  <div class="breadcrumb">
+    <a href="/">Projects</a> <span class="breadcrumb-sep">/</span> <a href="/projects/{{ artwork.projectSlug }}/">{{ artwork.projectTitle }}</a> <span class="breadcrumb-sep">/</span> <span>{{ artwork.title }}</span>
+  </div>
 
   <figure class="art-page__figure">
     <div class="art-page__img-wrap" onclick="document.getElementById('lightbox').classList.add('active')">

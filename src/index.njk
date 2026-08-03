@@ -6,7 +6,7 @@ homepage_summary: ""
 
 <p class="homepage-intro">Project Archive, 1983–Present</p>
 {% if homepage_summary %}<p class="page-summary">{{ homepage_summary }}</p>{% endif %}
-<div class="press-columns">
+<div class="press-columns homepage-grid">
   {% for project in projects %}
   {% if project.thumbnail %}
   <div class="press-entry project-entry">
@@ -15,7 +15,7 @@ homepage_summary: ""
     </a>
     <div class="project-entry-meta">
       <a href="/projects/{{ project.slug }}/" class="project-entry-title">{{ project.title }}</a>
-      <span class="project-entry-details">{{ project.studio }}{% if project.year %}, {{ project.year }}{% endif %}</span>
+      <span class="project-entry-details">{{ project.count }} works, {{ project.year }}</span>
     </div>
   </div>
   {% endif %}

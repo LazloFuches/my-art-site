@@ -27,13 +27,57 @@
     <div class="site-title"><a href="/">Robert Egert Studio</a></div>
     <nav>
       <a href="/bio/" class="{% if '/bio' in page.url %}active{% endif %}">Bio</a>
-      <a href="/ephemera/" class="{% if '/ephemera' in page.url %}active{% endif %}">Ephemera</a>
+      <a href="/ephemera/" class="{% if '/ephemera' in page.url or '/essay' in page.url %}active{% endif %}">Ephemera</a>
       <a href="/contact/" class="{% if '/contact' in page.url %}active{% endif %}">Contact</a>
     </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </header>
-  <main class="{{ layout | replace('.njk', '') }}{% if pageType %} {{ pageType }}{% endif %}">
-    {{ content | safe }}
-  </main>
+  <div class="site-body">
+    <main class="{{ layout | replace('.njk', '') }}{% if pageType %} {{ pageType }}{% endif %}">
+      {{ content | safe }}
+    </main>
+    {%- if not hideSidebar %}
+    <aside class="sidebar">
+      <span class="sidebar-label">Projects</span>
+      <nav class="sidebar-nav">
+        {%- for project in projects %}
+        <a href="/projects/{{ project.slug }}/" class="sidebar-link{% if '/projects/' + project.slug in page.url %} active{% endif %}">{{ project.title }}</a>
+        {%- endfor %}
+      </nav>
+    </aside>
+    {%- endif %}
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+    <nav class="mobile-menu-nav">
+      <a href="/">Projects</a>
+      <a href="/bio/">Bio</a>
+      <a href="/ephemera/">Ephemera</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <span class="mobile-menu-divider"></span>
+    <nav class="mobile-menu-projects">
+      {%- for project in projects %}
+      <a href="/projects/{{ project.slug }}/">{{ project.title }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.add('open');
+    });
+    document.getElementById('mobile-menu-close').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.remove('open');
+    });
+    document.getElementById('mobile-menu').addEventListener('click', function(e) {
+      if (e.target.tagName === 'A') this.classList.remove('open');
+    });
+  </script>
+
   <footer>
     <p>© Robert Egert Studio</p>
   </footer>
