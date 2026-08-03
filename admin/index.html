@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Robert Egert Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen" class="login-screen">
+    <div class="login-box">
+      <h1>Robert Egert Studio</h1>
+      <p>Content Administration</p>
+      <input type="password" id="password-input" placeholder="Enter password" autofocus>
+      <button id="login-btn" class="btn primary">Log In</button>
+      <div id="login-error" class="error hidden"></div>
+    </div>
+  </div>
+
+  <div id="admin-app" class="hidden">
+    <header class="admin-header">
+      <span class="admin-title">Robert Egert Studio - Admin</span>
+      <nav class="admin-nav">
+        <button class="nav-btn active" data-section="projects">Projects</button>
+        <button class="nav-btn" data-section="homepage">Homepage Order</button>
+        <button class="nav-btn" data-section="ephemera">Ephemera</button>
+        <button class="nav-btn" data-section="exhibitions">Exhibitions</button>
+      </nav>
+    </header>
+
+    <!-- PROJECTS SECTION -->
+    <section id="sec-projects" class="section active">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <button id="btn-new-project" class="btn primary btn-sm">+ New Project</button>
+      </div>
+      <div id="project-list" class="item-list"></div>
+
+      <div id="project-editor" class="editor hidden">
+        <div class="editor-header">
+          <button id="btn-back-projects" class="btn-back">&larr; Back to Projects</button>
+          <button id="btn-save-project" class="btn primary btn-sm">Save Project</button>
+        </div>
+        <div class="editor-fields">
+          <div class="field-row">
+            <div class="field">
+              <label>Title</label>
+              <input type="text" id="proj-title">
+            </div>
+            <div class="field">
+              <label>Year</label>
+              <input type="text" id="proj-year">
+            </div>
+          </div>
+          <div class="field">
+            <label>Summary (optional)</label>
+            <input type="text" id="proj-summary">
+          </div>
+        </div>
+
+        <h3>Images</h3>
+        <div id="proj-images" class="image-grid"></div>
+        <div class="image-add-row">
+          <button id="btn-add-image" class="btn secondary btn-sm">+ Add Image Entry</button>
+          <label class="btn secondary btn-sm upload-btn">
+            Upload Image File
+            <input type="file" id="image-upload" accept=".jpg,.jpeg,.png,.webp" hidden multiple>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOMEPAGE ORDER SECTION -->
+    <section id="sec-homepage" class="section hidden">
+      <div class="section-header">
+        <h2>Homepage Order</h2>
+        <button id="btn-save-homepage" class="btn primary btn-sm">Save Order</button>
+      </div>
+      <p class="section-desc">Drag to reorder projects on the homepage. Changes take effect after saving and rebuilding the site.</p>
+      <div id="homepage-list" class="sortable-list"></div>
+    </section>
+
+    <!-- EPHEMERA SECTION -->
+    <section id="sec-ephemera" class="section hidden">
+      <div class="section-header">
+        <h2>Ephemera</h2>
+        <div>
+          <button id="btn-add-ephemera" class="btn primary btn-sm">+ Add Entry</button>
+          <button id="btn-save-ephemera" class="btn primary btn-sm">Save All</button>
+        </div>
+      </div>
+      <div id="ephemera-list" class="item-list"></div>
+    </section>
+
+    <!-- EXHIBITIONS SECTION -->
+    <section id="sec-exhibitions" class="section hidden">
+      <div class="section-header">
+        <h2>Exhibition History</h2>
+        <div>
+          <button id="btn-add-year" class="btn primary btn-sm">+ Add Year</button>
+          <button id="btn-save-exhibitions" class="btn primary btn-sm">Save All</button>
+        </div>
+      </div>
+      <div id="exhibitions-list" class="item-list"></div>
+      <h3 style="margin-top:24px">Education</h3>
+      <div id="education-list" class="item-list"></div>
+      <button id="btn-add-education" class="btn secondary btn-sm" style="margin-top:8px">+ Add Entry</button>
+    </section>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

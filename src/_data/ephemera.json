@@ -1,0 +1,572 @@
+[
+  {
+    "type": "Photograph",
+    "title": "Praxis",
+    "date": "Studio Space Ottawa, 2026",
+    "images": [
+      "/assets/images/ephemera/30.jpg"
+    ],
+    "gallery": "praxis-2026",
+    "description": "Robert Egert with Anyu Sun leading Praxis Artist Talks, Studio Space Ottawa, 2026.",
+    "alt": "Praxis Artist Talks",
+    "text": [
+      "Robert Egert with Anyu Sun leading Praxis Artist Talks, Studio Space Ottawa, 2026."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Other Natures",
+    "date": "Rockland Center for the Arts, 2025",
+    "images": [
+      "/assets/images/ephemera/31.jpg"
+    ],
+    "gallery": "other-natures-ann",
+    "description": "Exhibition announcement for Other Natures, Rockland Center for the Arts, 2025.",
+    "alt": "Other Natures announcement",
+    "text": [
+      "Exhibition announcement for Other Natures, Rockland Center for the Arts, 2025."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Transcender",
+    "date": "Equity Gallery, New York, 2025",
+    "images": [
+      "/assets/images/ephemera/38.jpg",
+      "/assets/images/ephemera/39.jpg"
+    ],
+    "gallery": "transcender-2025",
+    "description": "Announcement for Transcender event held at Equity Gallery, LES, 2025.",
+    "alt": "Transcender announcement",
+    "text": [
+      "Announcement for Transcender event held at Equity Gallery, LES, 2025. Click to view all."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Other Life Forms — Closing",
+    "date": "Garner Arts Center, 2024",
+    "images": [
+      "/assets/images/ephemera/other-life-forms-closing.jpg"
+    ],
+    "gallery": "other-life-forms-close",
+    "description": "Closing party announcement for Other Life Forms, Garner Arts Center, 2024.",
+    "alt": "Other Life Forms closing",
+    "text": [
+      "Closing party announcement for Other Life Forms, Garner Arts Center, 2024."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Other Life Forms — Opening",
+    "date": "Garner Arts Center, 2023",
+    "images": [
+      "/assets/images/ephemera/instagram-w-artists-names.jpg"
+    ],
+    "gallery": "other-life-forms-open",
+    "description": "Opening announcement for Other Life Forms, Garner Arts Center, 2023.",
+    "alt": "Other Life Forms opening",
+    "text": [
+      "Opening announcement for Other Life Forms, Garner Arts Center, 2023."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Feature",
+    "title": "Sketchbook #19",
+    "date": "Talking Pictures, 2023",
+    "images": [
+      "/assets/images/ephemera/talking-pictures-sketchbook.jpg"
+    ],
+    "gallery": "talking-pictures",
+    "description": "Sketchbook #19: Robert Egert, featured on the Talking Pictures blog, 2023.",
+    "alt": "Talking Pictures sketchbook feature",
+    "text": [
+      "The Talking Pictures blog featured a suite of journal drawings in its Sketchbook series. On the work: &ldquo;Some time ago I was without a studio. During that time I would suddenly become overcome with loss, voicelessness and even panic. To assuage those feelings, I bought a large journal and used it as a portable studio. I didn&rsquo;t take it too seriously and it was liberating to think that I&rsquo;d probably never show anyone the journal. At first the images were about loss: lots of cutting and amputations. Later, I started to bind the limbs together to create makeshift architectures. Eventually the images broadened to include narratives, illustrations and other motifs. With the passage of time I came to realize that the journal was not only a document of that time in my life but also a kind of cipher to themes in my studio work.&rdquo;",
+      "With thanks to Cathy Nan Quinlan and Talking Pictures."
+    ],
+    "download": null,
+    "externalLink": "https://talkingpicturesblog.com/2023/02/06/sketchbook-19-robert-egert/"
+  },
+  {
+    "type": "Installation Photo",
+    "title": "Syncopation",
+    "date": "Georgetown Arts and Cultural Center, 2024",
+    "images": [
+      "/assets/images/ephemera/IMG_4541.jpeg"
+    ],
+    "gallery": "syncopation",
+    "description": "Installation photo from Syncopation, curated by Bob &amp; Julie Marty, Georgetown Arts and Cultural Center, 2024.",
+    "alt": "Syncopation installation",
+    "text": [
+      "Installation photo from Syncopation, curated by Bob &amp; Julie Marty, Georgetown Arts and Cultural Center, 2024."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Photograph",
+    "title": "Studio Wall",
+    "date": "Englewood, NJ, 2021",
+    "images": [
+      "/assets/images/ephemera/36.jpg"
+    ],
+    "gallery": "studio-englewood",
+    "description": "Paintings on paper during the pandemic, Englewood, NJ, 2021.",
+    "alt": "Studio Wall Englewood 2021",
+    "text": [
+      "Paintings on paper during the pandemic, Englewood, NJ, 2021."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Open Studio",
+    "date": "Bushwick Open Studio, 2019",
+    "images": [
+      "/assets/images/ephemera/Morgan-open-studio.jpg"
+    ],
+    "gallery": "open-studio",
+    "description": "Open Studio at Morgan Avenue, Bushwick Open Studio, 2019.",
+    "alt": "Open Studio announcement",
+    "text": [
+      "Open Studio at Morgan Avenue, Bushwick Open Studio, 2019."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Photograph",
+    "title": "Catalogues",
+    "date": "2018",
+    "images": [
+      "/assets/images/ephemera/catalgos-01.jpg"
+    ],
+    "gallery": "catalogues",
+    "description": "Catalogues, 2018.",
+    "alt": "Catalogues",
+    "text": [
+      "Catalogues, 2018."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Anthropocene",
+    "date": "SRO Gallery, 2018",
+    "images": [
+      "/assets/images/ephemera/artforum-anthropocene.jpg"
+    ],
+    "gallery": "artforum",
+    "description": "Post that appeared on Artforum for Anthropocene, SRO Gallery, 2018.",
+    "alt": "Artforum Anthropocene",
+    "text": [
+      "Post that appeared on Artforum for Anthropocene, SRO Gallery, 2018."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Anthropocene",
+    "date": "SRO Gallery, 2018",
+    "images": [
+      "/assets/images/ephemera/46.jpg"
+    ],
+    "gallery": "anthro-ann",
+    "description": "Announcement for Anthropocene at SRO Gallery, Brooklyn, 2018.",
+    "alt": "Anthropocene announcement",
+    "text": [
+      "Announcement for Anthropocene at SRO Gallery, Brooklyn, 2018."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Catalogue",
+    "title": "Anthropocene",
+    "date": "SRO Gallery, 2018",
+    "images": [
+      "/assets/images/ephemera/Robert-Egert-Anthropocene-Catalogue-cover.jpg"
+    ],
+    "gallery": "anthro-cat",
+    "description": "Catalogue produced in association with solo exhibition Anthropocene at SRO Gallery, 2018.",
+    "alt": "Anthropocene catalogue",
+    "text": [
+      "Catalogue for solo exhibition Anthropocene, SRO Gallery, 2018."
+    ],
+    "download": "/assets/pdfs/Robert-Egert-Anthropocene-Catalogue-2018-04-19.pdf",
+    "externalLink": null
+  },
+  {
+    "type": "Installation Photos",
+    "title": "Anthropocene",
+    "date": "SRO Gallery, 2018",
+    "images": [
+      "/assets/images/ephemera/IMG_6952.jpg",
+      "/assets/images/ephemera/anthropocene-installation-02.jpg"
+    ],
+    "gallery": "anthro-install",
+    "description": "Installation views, Anthropocene, SRO Gallery, 2018.",
+    "alt": "Anthropocene installation",
+    "text": [
+      "Installation views, Anthropocene, SRO Gallery, 2018. Click to view all photos."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Installation Photos",
+    "title": "Anthropocene Opening",
+    "date": "SRO Gallery, 2018",
+    "images": [
+      "/assets/images/ephemera/Opening-01.jpg",
+      "/assets/images/ephemera/opening-02.jpg",
+      "/assets/images/ephemera/opening-03.jpg",
+      "/assets/images/ephemera/opening-04.jpg"
+    ],
+    "gallery": "anthro-opening",
+    "description": "Opening at SRO Gallery for Anthropocene, 2018.",
+    "alt": "Anthropocene opening",
+    "text": [
+      "Opening at SRO Gallery for Anthropocene, 2018. Click to view all photos."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Profile",
+    "title": "Current Work",
+    "date": "Weinberger Fine Art, 2017",
+    "images": [
+      "/assets/images/ephemera/Egert-Current-Work-cover.jpg"
+    ],
+    "gallery": "weinberger",
+    "description": "Artist profile, Weinberger Fine Art, 2017.",
+    "alt": "Current Work profile",
+    "text": [
+      "Artist profile, Weinberger Fine Art, 2017."
+    ],
+    "download": "/assets/pdfs/egert-current-work.pdf",
+    "externalLink": null
+  },
+  {
+    "type": "Photograph",
+    "title": "Portrait",
+    "date": "Elizabeth Foundation for the Arts, 2017",
+    "images": [
+      "/assets/images/ephemera/Robert-Egert-Headshot.jpg"
+    ],
+    "gallery": "portrait-efa",
+    "description": "Portrait photo taken in studio at Elizabeth Foundation for the Arts, 2017.",
+    "alt": "Portrait photo",
+    "text": [
+      "Portrait photo taken in studio at Elizabeth Foundation for the Arts, 2017."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Morphopolis",
+    "date": "Ethan Pettit Contemporary, 2017",
+    "images": [
+      "/assets/images/ephemera/56.jpg"
+    ],
+    "gallery": "morphopolis-ann",
+    "description": "Morphopolis announcement, Ethan Pettit Contemporary, 2017.",
+    "alt": "Morphopolis announcement",
+    "text": [
+      "Morphopolis announcement, Ethan Pettit Contemporary, 2017."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Holland Tunnel Promotion",
+    "date": "Holland Tunnel Gallery, 2017",
+    "images": [
+      "/assets/images/ephemera/facebook-event-img.png"
+    ],
+    "gallery": "ht-promo",
+    "description": "Promotion for Holland Tunnel exhibition, 2017.",
+    "alt": "Holland Tunnel promotion",
+    "text": [
+      "Promotion for Holland Tunnel exhibition, 2017."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Press Release",
+    "title": "Bonsai Garden",
+    "date": "Holland Tunnel Gallery, 2017",
+    "images": [
+      "/assets/images/ephemera/Robert-Egert-Press-Release-Holland-Tunnel-cover.jpg"
+    ],
+    "gallery": "bonsai-pr",
+    "description": "Press release accompanying solo exhibition at Holland Tunnel Gallery, Brooklyn, NY, 2017.",
+    "alt": "Bonsai Garden press release",
+    "text": [
+      "Press release for solo exhibition at Holland Tunnel Gallery, Brooklyn, NY, 2017."
+    ],
+    "download": "/assets/pdfs/Robert-Egert-Press-Release-Holland-Tunnel-2017.pdf",
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Bonsai Garden",
+    "date": "Holland Tunnel Gallery, 2017",
+    "images": [
+      "/assets/images/ephemera/49.jpg"
+    ],
+    "gallery": "bonsai-ann-2",
+    "description": "Announcement for Bonsai Garden at Holland Tunnel, 2017.",
+    "alt": "Bonsai Garden announcement 2",
+    "text": [
+      "Announcement for Bonsai Garden at Holland Tunnel, 2017."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Bonsai Garden",
+    "date": "Holland Tunnel Gallery, 2017",
+    "images": [
+      "/assets/images/ephemera/IMG_3843.jpg"
+    ],
+    "gallery": "bonsai-ann",
+    "description": "Announcement for Bonsai Garden, Holland Tunnel Gallery, 2017.",
+    "alt": "Bonsai Garden announcement",
+    "text": [
+      "Announcement for Bonsai Garden, Holland Tunnel Gallery, 2017."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Photographs",
+    "title": "Figure Paintings",
+    "date": "Jersey City, NJ, 2016",
+    "images": [
+      "/assets/images/ephemera/80.jpg",
+      "/assets/images/ephemera/81.jpg",
+      "/assets/images/ephemera/82.jpg",
+      "/assets/images/ephemera/83.jpg"
+    ],
+    "gallery": "figure-paintings-2016",
+    "description": "A few figure paintings, Jersey City, NJ, 2016.",
+    "alt": "Figure paintings",
+    "text": [
+      "A few figure paintings, Jersey City, NJ, 2016. Click to view all."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Interview",
+    "title": "Interview with Michael Corbin",
+    "date": "ArtBookGuy, 2015",
+    "images": [
+      "/assets/images/ephemera/Interview-Corbin-cover.jpg"
+    ],
+    "gallery": "interview",
+    "description": "Interview with Michael Corbin on ArtBookGuy, 2015.",
+    "alt": "Interview with Michael Corbin",
+    "text": [
+      "Interview with Michael Corbin on ArtBookGuy, 2015."
+    ],
+    "download": "/assets/pdfs/Interview-Corbin.pdf",
+    "externalLink": null
+  },
+  {
+    "type": "Installation Photo",
+    "title": "Victory Hall",
+    "date": "Victory Hall, 2015",
+    "images": [
+      "/assets/images/ephemera/victory-hall.jpg"
+    ],
+    "gallery": "victory-hall",
+    "description": "Paintings installed at Victory Hall as part of the Drawing Rooms program of art in situ, 2015.",
+    "alt": "Victory Hall installation",
+    "text": [
+      "Paintings installed at Victory Hall as part of the Drawing Rooms program of art in situ, 2015."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Catalogue",
+    "title": "Morphopolis",
+    "date": "Ethan Pettit Contemporary Art, 2015",
+    "images": [
+      "/assets/images/ephemera/RobertEgertCatalogue_MASTER_SinglePages-cover.jpg"
+    ],
+    "gallery": "morphopolis-cat",
+    "description": "Catalogue produced in 2015 to accompany solo exhibition Morphopolis at Ethan Pettit Contemporary, Brooklyn, NY.",
+    "alt": "Morphopolis catalogue",
+    "text": [
+      "Catalogue for solo exhibition Morphopolis, Ethan Pettit Contemporary, Brooklyn, NY."
+    ],
+    "download": "/assets/pdfs/RobertEgertCatalogue_MASTER_SinglePages.pdf",
+    "externalLink": null
+  },
+  {
+    "type": "Essay",
+    "title": "Ideogram &amp; Morphism",
+    "date": "Ethan Pettit Contemporary Art, 2012",
+    "images": [
+      "/assets/images/ephemera/ideogram-and-morphism-cover.jpg"
+    ],
+    "gallery": "ideogram",
+    "description": "Essay by Ethan Pettit on Gothic Interiors, 2012.",
+    "alt": "Ideogram and Morphism essay",
+    "text": [
+      "Essay by Ethan Pettit on Gothic Interiors, 2012."
+    ],
+    "download": "/assets/pdfs/ideogram-and-morphism.pdf",
+    "externalLink": null
+  },
+  {
+    "type": "Review",
+    "title": "Inaugural Show",
+    "date": "Brooklyn Rail, 2012",
+    "images": [
+      "/assets/images/ephemera/Brooklyn-Rail-cover.jpg"
+    ],
+    "gallery": "brooklyn-rail",
+    "description": "Review of the inaugural exhibition at Ethan Pettit Contemporary in the Brooklyn Rail, 2012.",
+    "alt": "Brooklyn Rail review",
+    "text": [
+      "Charles Schultz reviews the inaugural exhibition at Ethan Pettit Contemporary in the Brooklyn Rail, discussing Robert Egert's cont&eacute; drawing &ldquo;Ambulation&rdquo; (2011).",
+      "&ldquo;Robert Egert's soft blue cont&eacute; crayon drawings come off microcosmic in this company &mdash; his compositions&hellip; are like Ellsworth Kelly forms with circulatory systems.&rdquo; &mdash; Charles Schultz, Brooklyn Rail, 2012"
+    ],
+    "download": "/assets/pdfs/Brooklyn-Rail.pdf",
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Wackadoodle",
+    "date": "Ethan Pettit Contemporary Art, 2012",
+    "images": [
+      "/assets/images/ephemera/e-mail_announcement.jpg"
+    ],
+    "gallery": "wackadoodle",
+    "description": "Promotion for group exhibit Wackadoodle at Ethan Pettit Contemporary, 2012.",
+    "alt": "Wackadoodle announcement",
+    "text": [
+      "Promotion for group exhibit Wackadoodle at Ethan Pettit Contemporary, 2012."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Poster",
+    "title": "Robert Egert",
+    "date": "White Columns, 1985",
+    "images": [
+      "/assets/images/ephemera/white-columns-poster.jpg"
+    ],
+    "gallery": "wc-poster",
+    "description": "Promotional poster with photo by Andreas Sterzing, White Columns, 1985.",
+    "alt": "White Columns poster",
+    "text": [
+      "Promotional poster with photo by Andreas Sterzing."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Robert Egert",
+    "date": "White Columns, 1985",
+    "images": [
+      "/assets/images/ephemera/White-Columns-Promotions-1985.jpg"
+    ],
+    "gallery": "wc-solo",
+    "description": "Announcement from solo exhibit at White Columns, 1985.",
+    "alt": "White Columns solo announcement",
+    "text": [
+      "Announcement from solo exhibit at White Columns, 1985."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "Update",
+    "date": "White Columns, 1985",
+    "images": [
+      "/assets/images/ephemera/white-columns-update-84-85.jpg"
+    ],
+    "gallery": "update",
+    "description": "Printed mailing from exhibition of works by artists who had solo shows in the prior two years.",
+    "alt": "White Columns Update",
+    "text": [
+      "Printed mailing from exhibition of works by artists who had solo shows in the prior two years."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Announcement",
+    "title": "White Room",
+    "date": "White Columns, 1985",
+    "images": [
+      "/assets/images/ephemera/white-columns-white-room-1985.jpg"
+    ],
+    "gallery": "white-room",
+    "description": "Announcement for exhibition at White Columns, 1985.",
+    "alt": "White Room announcement",
+    "text": [
+      "Announcement for exhibition at White Columns, 1985."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Photograph",
+    "title": "Portrait",
+    "date": "Brooklyn, NY, 1985",
+    "images": [
+      "/assets/images/ephemera/54.jpg"
+    ],
+    "gallery": "portrait-1985",
+    "description": "Studio photo, Brooklyn, NY, 1985.",
+    "alt": "Portrait 1985",
+    "text": [
+      "Studio photo, Brooklyn, NY, 1985."
+    ],
+    "download": null,
+    "externalLink": null
+  },
+  {
+    "type": "Photograph",
+    "title": "Studio Photo",
+    "date": "Brooklyn, NY, 1984",
+    "images": [
+      "/assets/images/ephemera/35.jpg"
+    ],
+    "gallery": "studio-1984",
+    "description": "Steve Buckley and Robert Egert in Williamsburg Brooklyn, 1984.",
+    "alt": "Studio photo 1984",
+    "text": [
+      "Steve Buckley and Robert Egert in Williamsburg Brooklyn, 1984."
+    ],
+    "download": null,
+    "externalLink": null
+  }
+]
