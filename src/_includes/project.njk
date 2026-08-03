@@ -10,7 +10,7 @@ layout: base.njk
 <div class="press-columns">
   {%- for image in images %}
   <div class="press-entry">
-    <a href="{{ image.src }}" class="glightbox" data-gallery="{{ title }}" data-description="{{ image.title }}, {{ image.medium }}, {{ image.dimensions }}, {{ image.date }}{% if image.collection %}, {{ image.collection }}{% endif %}">
+    <a href="/projects/{{ page.fileSlug }}/{{ loop.index }}/">
       <img src="{{ image.src }}" alt="{{ image.title }}, {{ image.medium }}, {{ image.dimensions }}, {{ image.date }}" loading="lazy">
     </a>
     <figcaption>

@@ -1,0 +1,40 @@
+---
+pagination:
+  data: collections.artworks
+  size: 1
+  alias: artwork
+permalink: "/projects/{{ artwork.projectSlug }}/{{ artwork.index + 1 }}/"
+layout: base.njk
+eleventyComputed:
+  title: "{{ artwork.title }} — {{ artwork.projectTitle }}"
+---
+<div class="art-page">
+
+  <a class="art-page__back" href="/projects/{{ artwork.projectSlug }}/">← {{ artwork.projectTitle }}</a>
+
+  <figure class="art-page__figure">
+    <img class="art-page__img" src="{{ artwork.src }}" alt="{{ artwork.title }}, {{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}">
+    <figcaption class="art-page__caption">
+      <span class="art-page__title">{{ artwork.title }}</span>
+      <span class="art-page__meta">{{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}</span>
+      {%- if artwork.collection %}
+      <span class="art-page__collection">{{ artwork.collection }}</span>
+      {%- endif %}
+    </figcaption>
+  </figure>
+
+  <nav class="art-page__nav">
+    {%- if artwork.index > 0 %}
+    <a class="art-page__prev" href="/projects/{{ artwork.projectSlug }}/{{ artwork.index }}/">← Previous</a>
+    {%- else %}
+    <span class="art-page__prev"></span>
+    {%- endif %}
+    <span class="art-page__counter">{{ artwork.index + 1 }} / {{ artwork.total }}</span>
+    {%- if artwork.index < artwork.total - 1 %}
+    <a class="art-page__next" href="/projects/{{ artwork.projectSlug }}/{{ artwork.index + 2 }}/">Next →</a>
+    {%- else %}
+    <span class="art-page__next"></span>
+    {%- endif %}
+  </nav>
+
+</div>
