@@ -1,17 +1,5 @@
 [
   {
-    "type": "Essay",
-    "title": "Biographical Essay by Laura Padgett",
-    "date": "",
-    "images": [],
-    "gallery": "",
-    "description": "Biographical essay on Robert Egert by Laura Padgett.",
-    "alt": "",
-    "text": ["Robert Egert is an artist who thrives from the confluence of many arteries. When I met him during foundation year at Pratt Institute I was impressed that he was born and raised in Brooklyn. Still, I don&rsquo;t know if I was more impressed by his knowledge of Greek and Roman myths, I think they kind of balanced each other out."],
-    "download": null,
-    "externalLink": "/essay/"
-  },
-  {
     "type": "Photograph",
     "title": "Praxis",
     "date": "Studio Space Ottawa, 2026",
@@ -419,6 +407,20 @@
     ],
     "download": null,
     "externalLink": null
+  },
+  {
+    "type": "Essay",
+    "title": "Biographical Essay by Laura Padgett",
+    "date": "2015",
+    "images": [],
+    "gallery": "",
+    "description": "Biographical essay on Robert Egert by Laura Padgett.",
+    "alt": "",
+    "text": [
+      "Robert Egert is an artist who thrives from the confluence of many arteries. When I met him during foundation year at Pratt Institute I was impressed that he was born and raised in Brooklyn. Still, I don&rsquo;t know if I was more impressed by his knowledge of Greek and Roman myths, I think they kind of balanced each other out."
+    ],
+    "download": null,
+    "externalLink": "/essay/"
   },
   {
     "type": "Catalogue",
