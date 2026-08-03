@@ -11,7 +11,7 @@ homepage_summary: ""
   {% if project.thumbnail %}
   <div class="press-entry project-entry">
     <a href="/projects/{{ project.slug }}/">
-      <img src="{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy">
+      {% image project.thumbnail, project.title, "thumbnail" %}
     </a>
     <div class="project-entry-meta">
       <a href="/projects/{{ project.slug }}/" class="project-entry-title">{{ project.title }}</a>

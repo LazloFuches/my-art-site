@@ -5,6 +5,7 @@ pagination:
   alias: artwork
 permalink: "/projects/{{ artwork.projectSlug }}/{{ artwork.index + 1 }}/"
 layout: base.njk
+pageType: art-detail
 eleventyComputed:
   title: "{{ artwork.title }} — {{ artwork.projectTitle }}"
 ---
@@ -13,7 +14,9 @@ eleventyComputed:
   <a class="art-page__back" href="/projects/{{ artwork.projectSlug }}/">← {{ artwork.projectTitle }}</a>
 
   <figure class="art-page__figure">
-    <img class="art-page__img" src="{{ artwork.src }}" alt="{{ artwork.title }}, {{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}">
+    <div class="art-page__img-wrap" onclick="document.getElementById('lightbox').classList.add('active')">
+      {% image artwork.src, artwork.title + ", " + artwork.medium + ", " + artwork.dimensions + ", " + artwork.date, "detail", "art-page__img" %}
+    </div>
     <figcaption class="art-page__caption">
       <span class="art-page__title">{{ artwork.title }}</span>
       <span class="art-page__meta">{{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}</span>
@@ -38,3 +41,12 @@ eleventyComputed:
   </nav>
 
 </div>
+
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+  <img src="{{ artwork.src }}" alt="{{ artwork.title }}">
+</div>
+<script>
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+  });
+</script>

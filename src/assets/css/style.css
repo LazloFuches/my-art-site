@@ -28,6 +28,9 @@ body {
 a { color: inherit; text-decoration: none; }
 a:hover { color: var(--text-light); }
 
+picture { display: block; }
+picture img { max-width: 100%; height: auto; display: block; }
+
 /* ============================================
    TYPE SCALE
    Page title:   15/400 normal  (home intro exception: 17/400)
@@ -503,7 +506,8 @@ figcaption {
   display: flex;
   align-items: center;
   border-top: 1px solid var(--border);
-  padding-top: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
 }
 .art-page__prev, .art-page__counter, .art-page__next { flex: 1; }
 .art-page__counter { text-align: center; font-size: 11px; color: var(--text-light); letter-spacing: 0.03em; }
@@ -517,7 +521,37 @@ a.art-page__prev, a.art-page__next {
 }
 a.art-page__prev:hover, a.art-page__next:hover { color: var(--text-light); }
 
+.art-detail ~ footer { border-top: none; }
+
+.art-page__img-wrap {
+  cursor: zoom-in;
+  position: relative;
+  display: inline-block;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  cursor: zoom-out;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .art-page__img { max-height: 55vh; }
-}
+  .lightbox { padding: 1rem; }
 }
