@@ -10,9 +10,16 @@ description: "Exhibition announcements, catalogues, reviews, installation photog
   <div class="press-entry">
     <div class="press-entry-header">
       <span class="press-entry-type">{{ item.type }}</span>
+      {%- if item.externalLink %}
+      <h2 class="press-entry-title"><a href="{{ item.externalLink }}">{{ item.title | safe }}</a></h2>
+      {%- else %}
       <h2 class="press-entry-title">{{ item.title | safe }}</h2>
+      {%- endif %}
+      {%- if item.date %}
       <span class="press-entry-date">{{ item.date }}</span>
+      {%- endif %}
     </div>
+    {%- if item.images.length > 0 %}
     <a href="{{ item.images[0] }}" class="glightbox" data-gallery="{{ item.gallery }}" data-description="{{ item.description | safe }}">
       <img src="{{ item.images[0] }}" alt="{{ item.alt }}" loading="lazy">
     </a>
@@ -21,6 +28,7 @@ description: "Exhibition announcements, catalogues, reviews, installation photog
     <a href="{{ image }}" class="glightbox" data-gallery="{{ item.gallery }}" data-description="{{ item.description | safe }}"></a>
       {%- endif %}
     {%- endfor %}
+    {%- endif %}
     {%- for paragraph in item.text %}
     <p class="press-entry-text">{{ paragraph | safe }}</p>
     {%- endfor %}
@@ -28,7 +36,7 @@ description: "Exhibition announcements, catalogues, reviews, installation photog
     <a class="press-download" href="{{ item.download }}" target="_blank">Download PDF</a>
     {%- endif %}
     {%- if item.externalLink %}
-    <a class="press-download" href="{{ item.externalLink }}" target="_blank">View Feature</a>
+    <a class="press-download" href="{{ item.externalLink }}">Read Full Essay</a>
     {%- endif %}
   </div>
 {%- endfor %}

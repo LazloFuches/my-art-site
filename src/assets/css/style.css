@@ -360,6 +360,20 @@ figcaption {
 
 .bio-subnav a:hover { color: var(--text); }
 
+.essay-back {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+.essay-back:hover { color: var(--text); }
+
+.press-entry-title a { color: inherit; }
+.press-entry-title a:hover { color: var(--text-light); text-decoration: underline; }
+
 #essay, #cv { scroll-margin-top: 4rem; }
 
 .bio-byline {
