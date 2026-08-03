@@ -5,7 +5,8 @@
     "year": "2026",
     "studio": "Bronx, NY",
     "thumbnail": "/assets/images/small-worlds/thumb.jpg",
-    "count": 14
+    "count": 14,
+    "featured": true
   },
   {
     "title": "Nocturnes",

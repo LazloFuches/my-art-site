@@ -1,23 +1,48 @@
 ---
 title: Projects
 layout: base.njk
-homepage_summary: ""
+pageType: homepage
+hideSidebar: true
 ---
 
-<p class="homepage-intro">Project Archive, 1983–Present</p>
-{% if homepage_summary %}<p class="page-summary">{{ homepage_summary }}</p>{% endif %}
-<div class="press-columns homepage-grid">
-  {% for project in projects %}
-  {% if project.thumbnail %}
-  <div class="press-entry project-entry">
+{%- for project in projects %}
+  {%- if project.featured %}
+<section class="hero">
+  <div class="hero-image">
     <a href="/projects/{{ project.slug }}/">
-      {% image project.thumbnail, project.title, "thumbnail" %}
+      {% image project.thumbnail, project.title, "detail" %}
     </a>
-    <div class="project-entry-meta">
-      <a href="/projects/{{ project.slug }}/" class="project-entry-title">{{ project.title }}</a>
-      <span class="project-entry-details">{{ project.count }} works, {{ project.year }}</span>
-    </div>
   </div>
-  {% endif %}
-  {% endfor %}
-</div>
+  <div class="hero-right">
+    <h1 class="hero-artist">Robert Egert</h1>
+    <div class="hero-bio">
+      <p>Born in Brooklyn in 1958, he has worked as a painter for four decades, moving between figuration, abstraction, and abstract narrative. He emerged in the early 1980s in New York with solo exhibitions at White Columns and Civilian Warfare, and was included in group exhibitions at Holly Solomon Gallery. His work is held in private and institutional collections in the US and Europe. He has written on art for publications that include Flash Art International and Hyperallergic.</p>
+    </div>
+    <div class="hero-caption">
+      <span class="hero-caption-title">{{ project.title }}</span>
+      <span class="hero-caption-details">{{ project.year }}, {{ project.count }} works</span>
+    </div>
+    <a href="/projects/{{ project.slug }}/" class="hero-link">View Series</a>
+  </div>
+</section>
+  {%- endif %}
+{%- endfor %}
+
+<section class="archive-section">
+  <span class="archive-label">Archive</span>
+  <div class="press-columns">
+    {%- for project in projects %}
+      {%- if not project.featured and project.thumbnail %}
+    <div class="press-entry project-entry">
+      <a href="/projects/{{ project.slug }}/">
+        {% image project.thumbnail, project.title, "thumbnail" %}
+      </a>
+      <div class="project-entry-meta">
+        <a href="/projects/{{ project.slug }}/" class="project-entry-title">{{ project.title }}</a>
+        <span class="project-entry-details">{{ project.count }} works, {{ project.year }}</span>
+      </div>
+    </div>
+      {%- endif %}
+    {%- endfor %}
+  </div>
+</section>

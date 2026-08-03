@@ -22,32 +22,24 @@
   }
   </script>
 </head>
-<body>
-  <header>
-    <div class="site-title"><a href="/">Robert Egert Studio</a></div>
-    <nav>
-      <a href="/bio/" class="{% if '/bio' in page.url %}active{% endif %}">Bio</a>
-      <a href="/ephemera/" class="{% if '/ephemera' in page.url or '/essay' in page.url %}active{% endif %}">Ephemera</a>
-      <a href="/contact/" class="{% if '/contact' in page.url %}active{% endif %}">Contact</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
+<body class="{% if pageType == 'homepage' %}body-white{% endif %}">
+  <div class="header-wrap">
+    <header>
+      <div class="site-title"><a href="/">Robert Egert Studio</a></div>
+      <nav>
+        <a href="/bio/" class="{% if '/bio' in page.url %}active{% endif %}">Bio</a>
+        <a href="/ephemera/" class="{% if '/ephemera' in page.url or '/essay' in page.url %}active{% endif %}">Ephemera</a>
+        <a href="/contact/" class="{% if '/contact' in page.url %}active{% endif %}">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+  </div>
   <div class="site-body">
     <main class="{{ layout | replace('.njk', '') }}{% if pageType %} {{ pageType }}{% endif %}">
       {{ content | safe }}
     </main>
-    {%- if not hideSidebar %}
-    <aside class="sidebar">
-      <span class="sidebar-label">Projects</span>
-      <nav class="sidebar-nav">
-        {%- for project in projects %}
-        <a href="/projects/{{ project.slug }}/" class="sidebar-link{% if '/projects/' + project.slug in page.url %} active{% endif %}">{{ project.title }}</a>
-        {%- endfor %}
-      </nav>
-    </aside>
-    {%- endif %}
   </div>
 
   <div class="mobile-menu" id="mobile-menu">
