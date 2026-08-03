@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/assets/pdfs");
-  eleventyConfig.addPassthroughCopy("src/assets/images/ephemera");
+  eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/glightbox.min.js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
