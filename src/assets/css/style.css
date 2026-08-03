@@ -137,7 +137,10 @@ footer {
 
 .hero-image a { display: block; }
 
-.hero-image img {
+.hero-image picture { display: block; }
+
+.hero-image img,
+.hero-image picture img {
   max-height: 65vh;
   width: auto;
   max-width: 100%;
