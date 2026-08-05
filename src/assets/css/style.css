@@ -12,7 +12,7 @@
   --border: #d0ceca;
   --max-width: 1200px;
   --gutter: 3rem;
-  --font: 'Inter', system-ui, sans-serif;
+  --font: 'Space Grotesk', system-ui, sans-serif;
   --font-heading: 'IBM Plex Mono', monospace;
 }
 
@@ -21,8 +21,8 @@ body {
   color: var(--text);
   font-family: var(--font);
   font-weight: 300;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,11 +36,13 @@ picture img { max-width: 100%; height: auto; display: block; }
 
 /* ============================================
    TYPE SCALE
-   Page title:   15/400 normal  (home intro exception: 17/400)
-   Item title:   13/400 normal
-   Label/eyebrow:11/500 UPPER 0.05em
-   Detail/meta:  11/400 normal --text-light
-   Body prose:   14/300 1.8
+   IBM Plex Mono: headings + display
+   Space Grotesk: body, nav, meta, labels
+   Display:  26/400  (hero artist name)
+   Heading:  15/400  (site title, page titles, section labels)
+   Body:     13/300  (prose, nav, captions, links)
+   Meta:     11/400  (dates, details, breadcrumbs)
+   Label:    11/500  UPPER 0.05em (section headings, buttons)
    ============================================ */
 
 /* HEADER */
@@ -61,7 +63,7 @@ header {
 
 .site-title {
   font-family: var(--font-heading);
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.95);
@@ -73,18 +75,27 @@ header {
 nav {
   display: flex;
   gap: 2.5rem;
-  font-family: var(--font-heading);
   font-size: 13px;
+  font-weight: 300;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.85);
 }
 
 nav a { color: rgba(255, 255, 255, 0.85); }
-nav a:hover { color: #ffffff; }
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
+}
 
 nav a.active {
   color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
 }
 
 /* SITE BODY (sidebar + main) */
@@ -105,7 +116,7 @@ main {
 }
 
 main:not(.homepage) {
-  padding-top: 0.4rem;
+  padding-top: 2rem;
 }
 
 /* FOOTER */
@@ -126,7 +137,7 @@ footer {
 
 .footer-title {
   font-family: var(--font-heading);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.95);
   display: block;
@@ -154,15 +165,19 @@ footer {
 }
 
 .footer-col a {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.85);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
   line-height: 1.9;
 }
 
 .footer-col a:hover {
   color: #ffffff;
+  text-decoration-color: #ffffff;
 }
 
 .footer-projects-grid {
@@ -171,16 +186,21 @@ footer {
 }
 
 .footer-projects-grid a {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.9;
   display: block;
   break-inside: avoid;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
 }
 
 .footer-projects-grid a:hover {
   color: #ffffff;
+  text-decoration-color: #ffffff;
 }
 
 /* BREADCRUMB */
@@ -243,9 +263,9 @@ footer {
 }
 
 .hero-bio p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.9;
   color: var(--text);
 }
 
@@ -257,7 +277,7 @@ footer {
 
 .hero-caption-title {
   font-size: 11px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-light);
   font-style: italic;
 }
@@ -269,13 +289,19 @@ footer {
 }
 
 .hero-link {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--text-light);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
+  align-self: flex-start;
 }
 
-.hero-link:hover { color: var(--text-light); }
+.hero-link:hover { color: var(--text-light); text-decoration-color: var(--text); }
 
 /* BACKGROUND ZONES */
 .body-white {
@@ -330,7 +356,7 @@ footer {
   display: block;
   font-family: var(--font-heading);
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
   color: var(--text);
   margin-bottom: 1.5rem;
@@ -370,11 +396,15 @@ footer {
 
 .project-entry-title {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--text-light);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
 }
 
-.project-entry-title:hover { color: var(--text-light); }
+.project-entry-title:hover { color: var(--text-light); text-decoration-color: var(--text); }
 
 .project-entry-details {
   font-size: 11px;
@@ -439,6 +469,15 @@ footer {
   font-size: 13px;
   font-weight: 300;
   color: var(--text-light);
+  text-decoration: underline;
+  text-decoration-color: var(--text-light);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
+}
+
+.other-projects-list a:hover {
+  color: var(--text);
+  text-decoration-color: var(--text);
 }
 
 .other-projects-list a:hover { color: var(--text); }
@@ -455,9 +494,15 @@ figcaption {
 
 .caption-title {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--text-light);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
 }
+
+.caption-title:hover { color: var(--text-light); text-decoration-color: var(--text); }
 
 .caption-details {
   font-size: 11px;
@@ -508,20 +553,20 @@ figcaption {
 
 .press-entry-title {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 
 .press-entry-date {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   color: var(--text-light);
 }
 
 .press-entry-text {
   font-size: 13px;
-  font-weight: 400;
-  line-height: 1.7;
+  font-weight: 300;
+  line-height: 1.8;
   color: var(--text-light);
   margin-bottom: 0.75rem;
 }
@@ -531,8 +576,10 @@ figcaption {
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--text);
-  padding-bottom: 1px;
+  text-decoration: underline;
+  text-decoration-color: var(--text-light);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
 }
 
 .press-entry img {
@@ -642,8 +689,14 @@ figcaption {
 }
 .essay-back:hover { color: var(--text); }
 
-.press-entry-title a { color: inherit; }
-.press-entry-title a:hover { color: var(--text-light); text-decoration: underline; }
+.press-entry-title a {
+  color: var(--text-light);
+  text-decoration: underline;
+  text-decoration-color: var(--text-light);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
+}
+.press-entry-title a:hover { color: var(--text); text-decoration-color: var(--text); }
 
 #essay, #cv { scroll-margin-top: 4rem; }
 
@@ -657,9 +710,9 @@ figcaption {
 }
 
 .bio-essay p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.9;
   margin-bottom: 1.5rem;
 }
 
@@ -693,7 +746,7 @@ figcaption {
 }
 
 .bio-year {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   color: var(--text-light);
   padding-top: 0.15rem;
@@ -818,9 +871,9 @@ figcaption {
 
 /* PAGE SUMMARY */
 .page-summary {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.9;
   max-width: 680px;
   margin-bottom: 2.5rem;
   color: var(--text);
@@ -882,7 +935,7 @@ figcaption {
 .art-page__counter { text-align: center; font-size: 11px; color: var(--text-light); letter-spacing: 0.03em; }
 .art-page__next { text-align: right; }
 a.art-page__prev, a.art-page__next {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;

@@ -13,6 +13,10 @@ description: "Exhibition announcements, catalogues, reviews, installation photog
       <span class="press-entry-type">{{ item.type }}</span>
       {%- if item.externalLink %}
       <h2 class="press-entry-title"><a href="{{ item.externalLink }}">{{ item.title | safe }}</a></h2>
+      {%- elif item.images.length > 0 %}
+      <h2 class="press-entry-title"><a href="{{ item.images[0] }}" class="press-title-lightbox">{{ item.title | safe }}</a></h2>
+      {%- elif item.download %}
+      <h2 class="press-entry-title"><a href="{{ item.download }}" target="_blank">{{ item.title | safe }}</a></h2>
       {%- else %}
       <h2 class="press-entry-title">{{ item.title | safe }}</h2>
       {%- endif %}
@@ -43,3 +47,13 @@ description: "Exhibition announcements, catalogues, reviews, installation photog
 {%- endfor %}
 
 </div>
+
+<script>
+document.querySelectorAll('.press-title-lightbox').forEach(function(el) {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
+    var trigger = this.closest('.press-entry').querySelector('.glightbox');
+    if (trigger) trigger.click();
+  });
+});
+</script>

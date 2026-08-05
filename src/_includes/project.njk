@@ -17,7 +17,7 @@ layout: base.njk
       {% image image.src, image.title + ", " + image.medium + ", " + image.dimensions + ", " + image.date, "grid" %}
     </a>
     <figcaption>
-      <span class="caption-title">{{ image.title }}</span>
+      <a href="/projects/{{ page.fileSlug }}/{{ loop.index }}/" class="caption-title">{{ image.title }}</a>
       <span class="caption-details">{{ image.medium }}, {{ image.dimensions }}, {{ image.date }}</span>
       {%- if image.collection %}
       <span class="caption-collection">{{ image.collection }}</span>
