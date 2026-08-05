@@ -13,6 +13,7 @@
   --max-width: 1200px;
   --gutter: 3rem;
   --font: 'Inter', system-ui, sans-serif;
+  --font-heading: 'IBM Plex Mono', monospace;
 }
 
 body {
@@ -58,9 +59,10 @@ header {
 }
 
 .site-title {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 nav {
@@ -98,10 +100,77 @@ main:not(.homepage) {
 
 /* FOOTER */
 footer {
-  padding: 2rem var(--gutter);
-  border-top: 1px solid var(--border);
+  background: #2a2a2a;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 2.5rem var(--gutter) 2rem;
+  border-top: none;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  gap: 2.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-copy {
   font-size: 11px;
-  color: var(--text-light);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-heading {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 0.75rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col a {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  line-height: 1.9;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+.footer-projects-grid {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.footer-projects-grid a {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.9;
+  display: block;
+  break-inside: avoid;
+}
+
+.footer-projects-grid a:hover {
+  color: #ffffff;
 }
 
 /* BREADCRUMB */
@@ -155,9 +224,10 @@ footer {
 }
 
 .hero-artist {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: var(--text);
   line-height: 1.2;
 }
@@ -215,7 +285,7 @@ footer {
 }
 
 .body-white footer {
-  background: var(--bg);
+  background: #2a2a2a;
   border-top: none;
 }
 
@@ -247,6 +317,7 @@ footer {
 
 .archive-label {
   display: block;
+  font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -312,6 +383,7 @@ footer {
 }
 
 .project-title-large {
+  font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -565,6 +637,7 @@ figcaption {
 #essay, #cv { scroll-margin-top: 4rem; }
 
 .bio-byline {
+  font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -592,6 +665,7 @@ figcaption {
 }
 
 .bio-heading {
+  font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -724,6 +798,11 @@ figcaption {
   .hero-image img { max-height: 45vh; }
   .hero-artist { font-size: 22px; }
   .press-columns { column-count: 1; }
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .footer-col--brand { grid-column: 1 / -1; }
 }
 
 /* PAGE SUMMARY */
@@ -777,7 +856,7 @@ figcaption {
   gap: 0.3rem;
   text-align: center;
 }
-.art-page__title { font-size: 15px; font-weight: 400; letter-spacing: 0.02em; }
+.art-page__title { font-family: var(--font-heading); font-size: 15px; font-weight: 400; letter-spacing: 0.02em; }
 .art-page__meta { font-size: 11px; color: var(--text-light); }
 .art-page__collection { font-size: 11px; font-style: italic; color: var(--text-light); }
 
@@ -800,7 +879,6 @@ a.art-page__prev, a.art-page__next {
 }
 a.art-page__prev:hover, a.art-page__next:hover { color: var(--text-light); }
 
-.art-detail ~ footer { border-top: none; }
 
 .art-page__img-wrap {
   cursor: zoom-in;

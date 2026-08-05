@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://robertegert.com{{ page.url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <script type="application/ld+json">
   {
@@ -71,7 +71,31 @@
   </script>
 
   <footer>
-    <p>© Robert Egert Studio</p>
+    <div class="footer-inner">
+      <div class="footer-col footer-col--brand">
+        <span class="footer-title">Robert Egert Studio</span>
+        <p class="footer-copy">&copy; 2026 Robert Egert</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Navigate</span>
+        <a href="/">Projects</a>
+        <a href="/bio/">Bio</a>
+        <a href="/ephemera/">Ephemera</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col footer-col--projects">
+        <span class="footer-heading">Projects</span>
+        <div class="footer-projects-grid">
+          {%- for project in projects %}
+          <a href="/projects/{{ project.slug }}/">{{ project.title }}</a>
+          {%- endfor %}
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Connect</span>
+        <a href="https://www.instagram.com/robert_egert/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
