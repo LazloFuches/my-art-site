@@ -21,7 +21,7 @@ eleventyComputed:
       {% image artwork.src, artwork.title + ", " + artwork.medium + ", " + artwork.dimensions + ", " + artwork.date, "detail", "art-page__img" %}
     </div>
     <figcaption class="art-page__caption">
-      <span class="art-page__title">{{ artwork.title }}</span>
+      <a class="art-page__title" href="#" onclick="document.getElementById('lightbox').classList.add('active'); return false;">{{ artwork.title }}</a>
       <span class="art-page__meta">{{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}</span>
       {%- if artwork.collection %}
       <span class="art-page__collection">{{ artwork.collection }}</span>

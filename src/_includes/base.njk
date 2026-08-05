@@ -78,16 +78,16 @@
       </div>
       <div class="footer-col">
         <span class="footer-heading">Navigate</span>
-        <a href="/">Projects</a>
-        <a href="/bio/">Bio</a>
-        <a href="/ephemera/">Ephemera</a>
-        <a href="/contact/">Contact</a>
+        <a href="/"{% if page.url == '/' %} class="footer-active"{% endif %}>Projects</a>
+        <a href="/bio/"{% if '/bio' in page.url %} class="footer-active"{% endif %}>Bio</a>
+        <a href="/ephemera/"{% if '/ephemera' in page.url %} class="footer-active"{% endif %}>Ephemera</a>
+        <a href="/contact/"{% if '/contact' in page.url %} class="footer-active"{% endif %}>Contact</a>
       </div>
       <div class="footer-col footer-col--projects">
         <span class="footer-heading">Projects</span>
         <div class="footer-projects-grid">
           {%- for project in projects %}
-          <a href="/projects/{{ project.slug }}/">{{ project.title }}</a>
+          <a href="/projects/{{ project.slug }}/"{% if page.url == '/projects/' + project.slug + '/' %} class="footer-active"{% endif %}>{{ project.title }}</a>
           {%- endfor %}
         </div>
       </div>

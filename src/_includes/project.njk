@@ -26,14 +26,3 @@ layout: base.njk
   </div>
   {%- endfor %}
 </div>
-
-<div class="other-projects">
-  <span class="other-projects-label">Other Projects</span>
-  <nav class="other-projects-list">
-    {%- for project in projects %}
-      {%- if project.slug != page.fileSlug %}
-    <a href="/projects/{{ project.slug }}/">{{ project.title }}</a>
-      {%- endif %}
-    {%- endfor %}
-  </nav>
-</div>

@@ -180,6 +180,11 @@ footer {
   text-decoration-color: #ffffff;
 }
 
+.footer-active {
+  color: #ffffff !important;
+  text-decoration-color: #ffffff !important;
+}
+
 .footer-projects-grid {
   column-count: 2;
   column-gap: 2rem;
@@ -920,7 +925,17 @@ figcaption {
   gap: 0.3rem;
   text-align: center;
 }
-.art-page__title { font-family: var(--font-heading); font-size: 15px; font-weight: 400; letter-spacing: 0.02em; }
+.art-page__title {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-decoration-color: var(--text-light);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
+}
+.art-page__title:hover { color: var(--text-light); text-decoration-color: var(--text); }
 .art-page__meta { font-size: 11px; color: var(--text-light); }
 .art-page__collection { font-size: 11px; font-style: italic; color: var(--text-light); }
 

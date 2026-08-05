@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
     },
   };
 
-  eleventyConfig.addNunjucksAsyncShortcode("image", async function(src, alt, type, cssClass) {
+  eleventyConfig.addNunjucksAsyncShortcode("image", async function(src, alt, type, cssClass, eager) {
     const profile = imageProfiles[type] || imageProfiles.grid;
     const inputPath = path.join("src", src);
 
@@ -46,9 +46,13 @@ module.exports = function(eleventyConfig) {
 
     const imageAttributes = {
       alt: alt || "",
-      loading: "lazy",
-      decoding: "async",
+      loading: eager ? "eager" : "lazy",
+      decoding: eager ? "sync" : "async",
     };
+    if (eager) {
+      imageAttributes.fetchpriority = "high";
+      imageAttributes.sizes = "100vw";
+    }
     if (cssClass) imageAttributes.class = cssClass;
 
     return Image.generateHTML(metadata, imageAttributes);
