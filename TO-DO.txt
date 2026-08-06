@@ -10,12 +10,20 @@ CONTENT TO ADD
 
 TECHNICAL
 ---------
-[ ] WebP image conversion (before launch)
+[x] WebP image conversion — already working via eleventy-img shortcode
+[x] Hero image eager loading with high fetch priority
+[x] Honeypot spam protection on contact form
 [ ] PDF catalogue page-by-page images — find automation/agent for this
 
 DESIGN
 ------
-[ ] Header redesign — match footer treatment
+[x] Header redesign — dark band matching footer, IBM Plex Mono
+[x] Typography overhaul — Space Grotesk body, IBM Plex Mono headings, 5-tier scale
+[x] Universal hyperlink styling — subtle underline, hover states
+[x] Footer active page indicators
+[x] Ephemera titles hyperlinked to lightbox
+[x] Artwork detail titles hyperlinked to lightbox
+[x] Removed redundant "Other Projects" list from project pages
 [ ] Review site on mobile
 [ ] Review site on different browsers
 
