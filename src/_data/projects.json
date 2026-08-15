@@ -6,7 +6,7 @@
     "studio": "Bronx, NY",
     "thumbnail": "/assets/images/small-worlds/15.jpg",
     "count": 16,
-    "featured": true
+    "section": "current"
   },
   {
     "title": "Nocturnes",
@@ -14,7 +14,8 @@
     "year": "2022",
     "studio": "Englewood, NJ",
     "thumbnail": "/assets/images/nocturnes/thumb.jpg",
-    "count": 12
+    "count": 12,
+    "section": "catalogue"
   },
   {
     "title": "Preparatory Academy",
@@ -22,7 +23,8 @@
     "year": "2021",
     "studio": "Brooklyn, NY",
     "thumbnail": "/assets/images/preparatory-academy/thumb.jpg",
-    "count": 16
+    "count": 16,
+    "section": "catalogue"
   },
   {
     "title": "Cliffs",
@@ -30,7 +32,8 @@
     "year": "2020",
     "studio": "In Situ",
     "thumbnail": "/assets/images/cliffs/thumb.jpg",
-    "count": 12
+    "count": 12,
+    "section": "catalogue"
   },
   {
     "title": "Anthropocene",
@@ -38,7 +41,8 @@
     "year": "2017",
     "studio": "NY, NY",
     "thumbnail": "/assets/images/anthropocene/thumb.jpg",
-    "count": 15
+    "count": 15,
+    "section": "catalogue"
   },
   {
     "title": "Bonsai Garden",
@@ -46,7 +50,8 @@
     "year": "2017",
     "studio": "LIC, NY",
     "thumbnail": "/assets/images/bonsai-garden/thumb.jpg",
-    "count": 11
+    "count": 11,
+    "section": "catalogue"
   },
   {
     "title": "Morphopolis",
@@ -54,7 +59,8 @@
     "year": "2014",
     "studio": "Englewood, NJ",
     "thumbnail": "/assets/images/morphopolis/thumb.jpg",
-    "count": 10
+    "count": 10,
+    "section": "catalogue"
   },
   {
     "title": "Gothic Interiors",
@@ -62,7 +68,8 @@
     "year": "2010-2013",
     "studio": "Garnerville, NY",
     "thumbnail": "/assets/images/gothic-interiors/thumb.jpg",
-    "count": 11
+    "count": 11,
+    "section": "catalogue"
   },
   {
     "title": "Towers",
@@ -70,7 +77,8 @@
     "year": "2012",
     "studio": "Garnerville, NY",
     "thumbnail": "/assets/images/towers/thumb.jpg",
-    "count": 10
+    "count": 10,
+    "section": "catalogue"
   },
   {
     "title": "Unbearable Sculpture",
@@ -78,7 +86,8 @@
     "year": "2010",
     "studio": "Garnerville, NY",
     "thumbnail": "/assets/images/unbearable-sculpture/thumb.jpg",
-    "count": 11
+    "count": 11,
+    "section": "catalogue"
   },
   {
     "title": "Gag Furniture",
@@ -86,7 +95,8 @@
     "year": "2008",
     "studio": "Garnerville, NY",
     "thumbnail": "/assets/images/gag-furniture/thumb.jpg",
-    "count": 10
+    "count": 10,
+    "section": "catalogue"
   },
   {
     "title": "Late 20th Century",
@@ -94,7 +104,8 @@
     "year": "1991",
     "studio": "Brooklyn, NY",
     "thumbnail": "/assets/images/late-20th-century/thumb.jpg",
-    "count": 15
+    "count": 15,
+    "section": "catalogue"
   },
   {
     "title": "Banners & Inscriptions",
@@ -102,7 +113,8 @@
     "year": "1986",
     "studio": "Brooklyn, NY",
     "thumbnail": "/assets/images/banners-and-inscriptions/thumb.jpg",
-    "count": 10
+    "count": 10,
+    "section": "catalogue"
   },
   {
     "title": "Early Work",
@@ -110,6 +122,7 @@
     "year": "1984",
     "studio": "Brooklyn, NY",
     "thumbnail": "/assets/images/early-work/thumb.jpg",
-    "count": 10
+    "count": 10,
+    "section": "catalogue"
   }
 ]

@@ -3,11 +3,37 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://robertegert.com/</loc></url>
-  <url><loc>https://robertegert.com/bio/</loc></url>
-  <url><loc>https://robertegert.com/ephemera/</loc></url>
-  <url><loc>https://robertegert.com/contact/</loc></url>
-  {% for project in projects %}<url><loc>https://robertegert.com/projects/{{ project.slug }}/</loc></url>
-  {% endfor %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://robertegert.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://robertegert.com/current-work/</loc>
+    <priority>0.9</priority>
+  </url>
+  {%- for artwork in collections.currentWorkArtworks %}
+  <url>
+    <loc>https://robertegert.com/current-work/{{ artwork.slug }}/</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://robertegert.com{{ artwork.src }}</image:loc>
+      <image:title>{{ artwork.title }}, {{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}. Painting by Robert Egert.</image:title>
+    </image:image>
+  </url>
+  {%- endfor %}
+  <url>
+    <loc>https://robertegert.com/catalogue/</loc>
+    <priority>0.7</priority>
+  </url>
+  {%- for project in projects %}
+  <url>
+    <loc>https://robertegert.com/projects/{{ project.slug }}/</loc>
+    <priority>0.6</priority>
+  </url>
+  {%- endfor %}
+  <url><loc>https://robertegert.com/bio/</loc><priority>0.5</priority></url>
+  <url><loc>https://robertegert.com/ephemera/</loc><priority>0.5</priority></url>
+  <url><loc>https://robertegert.com/contact/</loc><priority>0.4</priority></url>
 </urlset>

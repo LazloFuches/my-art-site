@@ -1,0 +1,27 @@
+---
+title: Catalogue
+layout: base.njk
+pageType: catalogue
+description: "Complete catalogue of paintings and works on paper by Robert Egert, 1984 to present."
+permalink: /catalogue/
+---
+
+<div class="catalogue-page">
+  <h1 class="catalogue-page__title">Catalogue of Earlier Work, 1984&ndash;2022</h1>
+  <div class="press-columns">
+    {%- for project in projects %}
+      {%- if project.section == "catalogue" %}
+    <div class="press-entry project-entry">
+      <span class="project-entry-date">{{ project.year }}</span>
+      <a href="/projects/{{ project.slug }}/">
+        {% image project.thumbnail, project.title, "thumbnail" %}
+      </a>
+      <div class="project-entry-meta">
+        <a href="/projects/{{ project.slug }}/" class="project-entry-title"><span class="project-entry-label">Series:</span> {{ project.title }}</a>
+        <span class="project-entry-details">{{ project.count }} works</span>
+      </div>
+    </div>
+      {%- endif %}
+    {%- endfor %}
+  </div>
+</div>

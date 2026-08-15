@@ -1,16 +1,23 @@
 ---
-title: Projects
+title: Robert Egert Studio
 layout: base.njk
 pageType: homepage
 hideSidebar: true
+description: "Robert Egert is a painter based in Ontario, Canada. Current paintings and a catalogue of works on paper, 1984 to present."
+ogImage: "/assets/images/small-worlds/15.jpg"
 ---
 
+{%- set currentProject = null %}
 {%- for project in projects %}
-  {%- if project.featured %}
+  {%- if project.section == "current" %}
+    {%- set currentProject = project %}
+  {%- endif %}
+{%- endfor %}
+
 <section class="hero">
   <div class="hero-image">
-    <a href="/projects/{{ project.slug }}/">
-      {% image project.thumbnail, project.title, "detail", "", true %}
+    <a href="/current-work/">
+      {% image currentProject.thumbnail, currentProject.title, "detail", "", true %}
     </a>
   </div>
   <div class="hero-right">
@@ -18,31 +25,21 @@ hideSidebar: true
     <div class="hero-bio">
       <p>Born in Brooklyn in 1958, he has worked as a painter for four decades, moving between figuration, abstraction, and abstract narrative. He emerged in the early 1980s in New York with solo exhibitions at White Columns and Civilian Warfare, and was included in group exhibitions at Holly Solomon Gallery. His work is held in private and institutional collections in the US and Europe. He has written on art for publications that include Flash Art International and Hyperallergic.</p>
     </div>
-    <div class="hero-caption">
-      <span class="hero-caption-title">{{ project.title }}</span>
-      <span class="hero-caption-details">{{ project.year }}, {{ project.count }} works</span>
-    </div>
-    <a href="/projects/{{ project.slug }}/" class="hero-link">View Recent Work</a>
-  </div>
-</section>
-  {%- endif %}
-{%- endfor %}
-
-<section class="archive-section">
-  <span class="archive-label">Archive</span>
-  <div class="press-columns">
-    {%- for project in projects %}
-      {%- if not project.featured and project.thumbnail %}
-    <div class="press-entry project-entry">
-      <a href="/projects/{{ project.slug }}/">
-        {% image project.thumbnail, project.title, "thumbnail" %}
+    <div class="hero-thumbs">
+      {%- for artwork in collections.currentWorkArtworks %}
+        {%- if loop.index <= 5 %}
+      <a href="/current-work/" class="hero-thumb">
+        {% image artwork.src, artwork.title, "thumbnail", "hero-thumb__img" %}
       </a>
-      <div class="project-entry-meta">
-        <a href="/projects/{{ project.slug }}/" class="project-entry-title">{{ project.title }}</a>
-        <span class="project-entry-details">{{ project.count }} works, {{ project.year }}</span>
-      </div>
+        {%- endif %}
+      {%- endfor %}
     </div>
-      {%- endif %}
-    {%- endfor %}
+    <div class="hero-bottom">
+      <div class="hero-caption">
+        <span class="hero-caption-title">{{ collections.currentWorkArtworks[0].title }}</span>
+        <span class="hero-caption-details">from {{ currentProject.title }}, 2024&ndash;2026, {{ currentProject.count }} works</span>
+      </div>
+      <a href="/current-work/" class="hero-link">View Current Work</a>
+    </div>
   </div>
 </section>

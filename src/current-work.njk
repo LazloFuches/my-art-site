@@ -1,0 +1,30 @@
+---
+title: Current Work
+layout: base.njk
+pageType: current-work
+description: "Current paintings by Robert Egert. Oil on canvas and board, 2024-2026."
+permalink: /current-work/
+hideSidebar: true
+ogImage: "/assets/images/small-worlds/15.jpg"
+---
+
+<div class="cw-landing">
+  <header class="cw-landing__header">
+    <h1 class="cw-landing__title">Current Work: Small Worlds, 2024&ndash;2026</h1>
+    <p class="cw-landing__inquiry-note">Works available by inquiry</p>
+  </header>
+
+  <div class="cw-landing__grid">
+    {%- for artwork in collections.currentWorkArtworks %}
+    <a href="/current-work/{{ artwork.slug }}/" class="cw-card">
+      <figure class="cw-card__figure">
+        {% image artwork.src, artwork.title + ", " + artwork.medium + ", " + artwork.dimensions, "grid", "cw-card__img" %}
+      </figure>
+      <figcaption class="cw-card__caption">
+        <span class="cw-card__title">{{ artwork.title }}</span>
+        <span class="cw-card__meta">{{ artwork.medium }}, {{ artwork.dimensions }}</span>
+      </figcaption>
+    </a>
+    {%- endfor %}
+  </div>
+</div>

@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }} — Robert Egert Studio</title>
-  <meta name="description" content="{% if description %}{{ description }}{% else %}Robert Egert is a painter based in New York. An archive of paintings and works on paper, 1983 to present.{% endif %}">
+  <meta name="description" content="{% if description %}{{ description }}{% else %}Robert Egert is a painter based in Ontario, Canada. Current paintings and a catalogue of works on paper, 1984 to present.{% endif %}">
   <link rel="canonical" href="https://robertegert.com{{ page.url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  {%- if ogImage %}
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://robertegert.com{{ ogImage }}">
+  <meta property="og:url" content="https://robertegert.com{{ page.url }}">
+  <meta property="og:type" content="{% if pageType == 'current-work-detail' or pageType == 'art-detail' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="Robert Egert Studio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="https://robertegert.com{{ ogImage }}">
+  {%- endif %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -17,16 +29,18 @@
     "name": "Robert Egert",
     "url": "https://robertegert.com",
     "jobTitle": "Artist",
-    "description": "Robert Egert is a painter based in New York.",
+    "description": "Robert Egert is a painter based in Ontario, Canada.",
     "sameAs": ["https://www.instagram.com/robert_egert/"]
   }
   </script>
 </head>
-<body class="{% if pageType == 'homepage' %}body-white{% endif %}">
+<body>
   <div class="header-wrap">
     <header>
       <div class="site-title"><a href="/">Robert Egert Studio</a></div>
       <nav>
+        <a href="/current-work/" class="{% if '/current-work' in page.url %}active{% endif %}">Current Work</a>
+        <a href="/catalogue/" class="{% if '/catalogue' in page.url or '/projects' in page.url %}active{% endif %}">Catalogue</a>
         <a href="/bio/" class="{% if '/bio' in page.url %}active{% endif %}">Bio</a>
         <a href="/ephemera/" class="{% if '/ephemera' in page.url or '/essay' in page.url %}active{% endif %}">Ephemera</a>
         <a href="/contact/" class="{% if '/contact' in page.url %}active{% endif %}">Contact</a>
@@ -45,7 +59,9 @@
   <div class="mobile-menu" id="mobile-menu">
     <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
     <nav class="mobile-menu-nav">
-      <a href="/">Projects</a>
+      <a href="/">Home</a>
+      <a href="/current-work/">Current Work</a>
+      <a href="/catalogue/">Catalogue</a>
       <a href="/bio/">Bio</a>
       <a href="/ephemera/">Ephemera</a>
       <a href="/contact/">Contact</a>
@@ -53,7 +69,9 @@
     <span class="mobile-menu-divider"></span>
     <nav class="mobile-menu-projects">
       {%- for project in projects %}
+        {%- if project.section == "catalogue" %}
       <a href="/projects/{{ project.slug }}/">{{ project.title }}</a>
+        {%- endif %}
       {%- endfor %}
     </nav>
   </div>
@@ -70,6 +88,11 @@
     });
   </script>
 
+  {%- if pageType == 'current-work-detail' or pageType == 'art-detail' %}
+  <script src="/assets/js/zoom.js"></script>
+  <script src="/assets/js/inquiry.js"></script>
+  {%- endif %}
+
   <footer>
     <div class="footer-inner">
       <div class="footer-col footer-col--brand">
@@ -78,7 +101,9 @@
       </div>
       <div class="footer-col">
         <span class="footer-heading">Navigate</span>
-        <a href="/"{% if page.url == '/' %} class="footer-active"{% endif %}>Projects</a>
+        <a href="/"{% if page.url == '/' %} class="footer-active"{% endif %}>Home</a>
+        <a href="/current-work/"{% if '/current-work' in page.url %} class="footer-active"{% endif %}>Current Work</a>
+        <a href="/catalogue/"{% if '/catalogue' in page.url %} class="footer-active"{% endif %}>Catalogue</a>
         <a href="/bio/"{% if '/bio' in page.url %} class="footer-active"{% endif %}>Bio</a>
         <a href="/ephemera/"{% if '/ephemera' in page.url %} class="footer-active"{% endif %}>Ephemera</a>
         <a href="/contact/"{% if '/contact' in page.url %} class="footer-active"{% endif %}>Contact</a>

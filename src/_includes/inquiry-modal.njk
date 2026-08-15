@@ -1,0 +1,30 @@
+<div class="inquiry-overlay" id="inquiry-overlay">
+  <div class="inquiry-modal">
+    <button class="inquiry-modal__close" onclick="closeInquiry()" aria-label="Close">&times;</button>
+    <h3 class="inquiry-modal__label">Inquiry</h3>
+    <p class="inquiry-modal__subject">{{ artwork.title }}</p>
+    <form id="inquiry-form" action="https://formspree.io/f/xgojykyo" method="POST">
+      <input type="hidden" name="subject" value="Inquiry: {{ artwork.title }}">
+      <input type="hidden" name="_subject" value="Inquiry: {{ artwork.title }}">
+      <input type="hidden" name="artwork" value="{{ artwork.title }}, {{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}">
+      <div class="inquiry-modal__field">
+        <label for="inquiry-name">Name</label>
+        <input type="text" id="inquiry-name" name="name" required>
+      </div>
+      <div class="inquiry-modal__field">
+        <label for="inquiry-email">Email</label>
+        <input type="email" id="inquiry-email" name="email" required>
+      </div>
+      <div class="inquiry-modal__field">
+        <label for="inquiry-message">Message</label>
+        <textarea id="inquiry-message" name="message" rows="4" placeholder="I am interested in learning more about this work."></textarea>
+      </div>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <button type="submit" class="inquiry-modal__submit">Send Inquiry</button>
+    </form>
+    <div class="inquiry-modal__success" id="inquiry-success">
+      <p>Thank you for your inquiry.</p>
+      <p class="inquiry-modal__success-sub">Robert will respond as soon as possible.</p>
+    </div>
+  </div>
+</div>

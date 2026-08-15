@@ -1,22 +1,22 @@
 ---
 pagination:
-  data: collections.artworks
+  data: collections.currentWorkArtworks
   size: 1
   alias: artwork
-permalink: "/projects/{{ artwork.projectSlug }}/{{ artwork.index + 1 }}/"
+permalink: "/current-work/{{ artwork.slug }}/"
 layout: base.njk
-pageType: art-detail
+pageType: current-work-detail
 hideSidebar: true
 eleventyComputed:
-  title: "{{ artwork.title }} — {{ artwork.projectTitle }}"
-  description: "{{ artwork.title }}, {{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}. From {{ artwork.projectTitle }} by Robert Egert."
+  title: "{{ artwork.title }} — Robert Egert"
+  description: "{{ artwork.title }}, {{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}. Painting by Robert Egert."
   ogImage: "{{ artwork.src }}"
 ---
 
 <article class="cw-detail">
   <nav class="cw-detail__breadcrumb" aria-label="Breadcrumb">
-    <a href="/catalogue/">Catalogue</a> <span class="cw-detail__sep">/</span>
-    <a href="/projects/{{ artwork.projectSlug }}/">{{ artwork.projectTitle }}</a> <span class="cw-detail__sep">/</span>
+    <a href="/">Home</a> <span class="cw-detail__sep">/</span>
+    <a href="/current-work/">Current Work</a> <span class="cw-detail__sep">/</span>
     <span>{{ artwork.title }}</span>
   </nav>
 
@@ -48,13 +48,13 @@ eleventyComputed:
 
     <nav class="cw-detail__nav" aria-label="Artwork navigation">
       {%- if artwork.index > 0 %}
-      <a href="/projects/{{ artwork.projectSlug }}/{{ artwork.index }}/" class="cw-detail__nav-link cw-detail__prev">&larr; Previous</a>
+      <a href="/current-work/{{ collections.currentWorkArtworks[artwork.index - 1].slug }}/" class="cw-detail__nav-link cw-detail__prev">&larr; Previous</a>
       {%- else %}
       <span class="cw-detail__nav-link"></span>
       {%- endif %}
       <span class="cw-detail__counter">{{ artwork.index + 1 }} / {{ artwork.total }}</span>
       {%- if artwork.index < artwork.total - 1 %}
-      <a href="/projects/{{ artwork.projectSlug }}/{{ artwork.index + 2 }}/" class="cw-detail__nav-link cw-detail__next">Next &rarr;</a>
+      <a href="/current-work/{{ collections.currentWorkArtworks[artwork.index + 1].slug }}/" class="cw-detail__nav-link cw-detail__next">Next &rarr;</a>
       {%- else %}
       <span class="cw-detail__nav-link"></span>
       {%- endif %}
@@ -79,13 +79,19 @@ eleventyComputed:
       "name": "{{ artwork.dimensions }}"
     },
     "image": "https://robertegert.com{{ artwork.src }}",
-    "url": "https://robertegert.com/projects/{{ artwork.projectSlug }}/{{ artwork.index + 1 }}/",
+    "url": "https://robertegert.com/current-work/{{ artwork.slug }}/",
     "isPartOf": {
       "@type": "Collection",
       "name": "{{ artwork.projectTitle }}",
-      "url": "https://robertegert.com/projects/{{ artwork.projectSlug }}/"
-    }{% if artwork.collection %},
-    "locationCreated": "{{ artwork.collection }}"{% endif %}
+      "url": "https://robertegert.com/current-work/"
+    }{% if not artwork.collection %},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "USD",
+      "price": "0",
+      "description": "Available for inquiry"
+    }{% endif %}
   }
   </script>
 </article>

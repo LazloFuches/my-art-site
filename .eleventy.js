@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/pdfs");
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/glightbox.min.js");
+  eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   const imageProfiles = {
@@ -56,6 +57,49 @@ module.exports = function(eleventyConfig) {
     if (cssClass) imageAttributes.class = cssClass;
 
     return Image.generateHTML(metadata, imageAttributes);
+  });
+
+  function slugify(str) {
+    return str.toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)/g, '');
+  }
+
+  eleventyConfig.addCollection("currentWorkArtworks", function(collectionApi) {
+    const projectsData = require("./src/_data/projects.json");
+    const currentSlugs = projectsData
+      .filter(p => p.section === "current")
+      .map(p => p.slug);
+
+    const artworks = [];
+    const projectPages = collectionApi.getFilteredByGlob("src/projects/*.njk")
+      .filter(p => currentSlugs.includes(p.fileSlug) && p.data.images && p.data.images.length > 0);
+
+    for (const project of projectPages) {
+      project.data.images.forEach((img, i) => {
+        artworks.push({
+          ...img,
+          slug: slugify(img.title),
+          projectTitle: project.data.title,
+          projectYear: project.data.year,
+          projectSlug: project.fileSlug,
+          index: i,
+          total: project.data.images.length,
+        });
+      });
+    }
+
+    const seenSlugs = {};
+    artworks.forEach(a => {
+      if (seenSlugs[a.slug]) {
+        seenSlugs[a.slug]++;
+        a.slug = a.slug + '-' + seenSlugs[a.slug];
+      } else {
+        seenSlugs[a.slug] = 1;
+      }
+    });
+
+    return artworks;
   });
 
   eleventyConfig.addCollection("artworks", function(collectionApi) {
