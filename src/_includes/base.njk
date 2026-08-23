@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  {%- if '/ephemera' in page.url %}
+  <link rel="stylesheet" href="/assets/css/glightbox.min.css">
+  {%- endif %}
   {%- if ogImage %}
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
@@ -91,6 +94,18 @@
   {%- if pageType == 'current-work-detail' or pageType == 'art-detail' %}
   <script src="/assets/js/zoom.js"></script>
   <script src="/assets/js/inquiry.js"></script>
+  {%- endif %}
+
+  {%- if '/ephemera' in page.url %}
+  <script src="/assets/glightbox.min.js"></script>
+  <script>
+    var lightbox = GLightbox({
+      selector: '.glightbox',
+      closeButton: true,
+      touchNavigation: true,
+      loop: true,
+    });
+  </script>
   {%- endif %}
 
   <footer>
