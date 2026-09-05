@@ -33,7 +33,18 @@ eleventyExcludeFromCollections: true
     <priority>0.6</priority>
   </url>
   {%- endfor %}
+  {%- for artwork in collections.artworks %}
+  <url>
+    <loc>https://robertegert.com/projects/{{ artwork.projectSlug }}/{{ artwork.index + 1 }}/</loc>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://robertegert.com{{ artwork.src }}</image:loc>
+      <image:title>{{ artwork.title }}, {{ artwork.medium }}, {{ artwork.dimensions }}, {{ artwork.date }}. From {{ artwork.projectTitle }} by Robert Egert.</image:title>
+    </image:image>
+  </url>
+  {%- endfor %}
   <url><loc>https://robertegert.com/bio/</loc><priority>0.5</priority></url>
   <url><loc>https://robertegert.com/ephemera/</loc><priority>0.5</priority></url>
+  <url><loc>https://robertegert.com/essay/</loc><priority>0.5</priority></url>
   <url><loc>https://robertegert.com/contact/</loc><priority>0.4</priority></url>
 </urlset>
