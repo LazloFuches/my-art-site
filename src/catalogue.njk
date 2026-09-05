@@ -7,8 +7,18 @@ permalink: /catalogue/
 ---
 
 <div class="catalogue-page">
-  <h1 class="catalogue-page__title">Catalogue of Earlier Work, 1984&ndash;2022</h1>
+  <h1 class="catalogue-page__title">Catalogue of Work, 1984&ndash;Present</h1>
   <div class="press-columns">
+    <div class="press-entry project-entry">
+      <span class="project-entry-date">2024&ndash;2026</span>
+      <a href="/current-work/">
+        {% image "/assets/images/small-worlds/15.jpg", "Current Work", "thumbnail" %}
+      </a>
+      <div class="project-entry-meta">
+        <a href="/current-work/" class="project-entry-title"><span class="project-entry-label">Series:</span> Current Work</a>
+        <span class="project-entry-details">{{ collections.currentWorkArtworks.length }} works</span>
+      </div>
+    </div>
     {%- for project in projects %}
       {%- if project.section == "catalogue" %}
     <div class="press-entry project-entry">

@@ -126,8 +126,11 @@
       <div class="footer-col footer-col--projects">
         <span class="footer-heading">Catalogue</span>
         <div class="footer-projects-grid">
+          <a href="/current-work/"{% if '/current-work' in page.url %} class="footer-active"{% endif %}>Current Work</a>
           {%- for project in projects %}
+          {%- if project.section != "current" %}
           <a href="/projects/{{ project.slug }}/"{% if page.url == '/projects/' + project.slug + '/' %} class="footer-active"{% endif %}>{{ project.title }}</a>
+          {%- endif %}
           {%- endfor %}
         </div>
       </div>
