@@ -1,6 +1,3 @@
-# Redirect pages.dev traffic to custom domain
-https://my-art-site-48k.pages.dev/* https://robertegert.com/:splat 301
-
 # Renamed paintings (August 2026)
 /current-work/the-price-to-pay-for-thinking/ /current-work/interior-dialogue/ 301
 /current-work/something-lives/ /current-work/superficial-resemblance/ 301

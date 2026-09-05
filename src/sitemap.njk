@@ -7,10 +7,12 @@ eleventyExcludeFromCollections: true
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://robertegert.com/</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://robertegert.com/current-work/</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>0.9</priority>
   </url>
   {%- for artwork in collections.currentWorkArtworks %}
@@ -25,6 +27,7 @@ eleventyExcludeFromCollections: true
   {%- endfor %}
   <url>
     <loc>https://robertegert.com/catalogue/</loc>
+    <lastmod>2026-09-05</lastmod>
     <priority>0.7</priority>
   </url>
   {%- for project in projects %}
@@ -43,8 +46,8 @@ eleventyExcludeFromCollections: true
     </image:image>
   </url>
   {%- endfor %}
-  <url><loc>https://robertegert.com/bio/</loc><priority>0.5</priority></url>
-  <url><loc>https://robertegert.com/ephemera/</loc><priority>0.5</priority></url>
-  <url><loc>https://robertegert.com/essay/</loc><priority>0.5</priority></url>
-  <url><loc>https://robertegert.com/contact/</loc><priority>0.4</priority></url>
+  <url><loc>https://robertegert.com/bio/</loc><lastmod>2026-08-15</lastmod><priority>0.5</priority></url>
+  <url><loc>https://robertegert.com/ephemera/</loc><lastmod>2026-08-05</lastmod><priority>0.5</priority></url>
+  <url><loc>https://robertegert.com/essay/</loc><lastmod>2026-08-03</lastmod><priority>0.5</priority></url>
+  <url><loc>https://robertegert.com/contact/</loc><lastmod>2026-08-05</lastmod><priority>0.4</priority></url>
 </urlset>
